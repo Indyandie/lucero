@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi';
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,6 +10,16 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
+			plugins: [
+        // Generate the OpenAPI documentation pages.
+        starlightOpenAPI([
+          {
+           base: 'api/openai',
+           label: 'openAI',
+           schema: './apis/openai.yml',
+          },
+        ]),
+      ],
 			sidebar: [
 				{
 					label: 'Docs',
@@ -21,6 +32,11 @@ export default defineConfig({
 						{ label: 'Example Guide', link: '/guides/example/' },
 					],
 				},
+				{
+          label: 'APIs',
+          items: openAPISidebarGroups,
+        },
+				// ...openAPISidebarGroups,
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
