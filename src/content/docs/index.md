@@ -1,12 +1,12 @@
 ---
-title: My Home Page
+title: Lucero
 template: splash
 hero:
-  title: 'My Project: Stellar Stuff Sooner'
+  title: Lucero
   tagline: Take your stuff to the moon and back in the blink of an eye.
   actions:
-    - text: Tell me more
-      link: /getting-started/
+    - text: Get started
+      link: /docs/usage/
       icon: right-arrow
       variant: primary
     - text: View on GitHub
