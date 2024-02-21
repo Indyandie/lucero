@@ -5,11 +5,15 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: '🌕 Lucero',
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
 			sidebar: [
+				{
+					label: 'Docs',
+					autogenerate: { directory: 'docs' },
+				},
 				{
 					label: 'Guides',
 					items: [
