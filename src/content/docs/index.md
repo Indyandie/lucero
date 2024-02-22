@@ -10,7 +10,7 @@ hero:
       icon: right-arrow
       variant: primary
     - text: View on GitHub
-      link: https://github.com/astronaut/my-project
+      link: https://github.com/indyandie/lucero
       icon: external
       attrs:
         rel: me
