@@ -18,6 +18,11 @@ export default defineConfig({
            label: 'openAI',
            schema: './apis/openai.yml',
           },
+          {
+           base: 'api/pokemon',
+           label: 'pokemon',
+           schema: './apis/pokeapi.yml',
+          },
         ]),
       ],
 			sidebar: [
