@@ -4,6 +4,8 @@ import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://indyandie.github.io/',
+  base: 'lucero/',
 	integrations: [
 		starlight({
 			title: '🌕 Lucero',
