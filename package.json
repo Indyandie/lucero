@@ -1,5 +1,6 @@
 {
   "name": "lucero",
+  "packageManager": "yarn@4.1.0",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
