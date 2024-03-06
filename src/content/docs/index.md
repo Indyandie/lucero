@@ -6,7 +6,7 @@ hero:
   tagline: Take your stuff to the moon and back in the blink of an eye.
   actions:
     - text: Get started
-      link: /docs/usage/
+      link: /lucero/docs/usage/
       icon: right-arrow
       variant: primary
     - text: View on GitHub
