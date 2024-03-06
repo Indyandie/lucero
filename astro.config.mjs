@@ -19,8 +19,8 @@ export default defineConfig({
            schema: './apis/openai.yml',
           },
           {
-           base: 'api/pokemon',
-           label: 'pokemon',
+           base: 'api/pokeapi',
+           label: 'PokeAPI',
            schema: './apis/pokeapi.yml',
           },
         ]),
