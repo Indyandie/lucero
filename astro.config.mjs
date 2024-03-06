@@ -15,11 +15,11 @@ export default defineConfig({
 			plugins: [
         // Generate the OpenAPI documentation pages.
         starlightOpenAPI([
-          {
-           base: 'api/openai',
-           label: 'openAI',
-           schema: './apis/openai.yml',
-          },
+          // {
+          //  base: 'api/openai',
+          //  label: 'openAI',
+          //  schema: './apis/openai.yml',
+          // },
           {
            base: 'api/pokeapi',
            label: 'PokeAPI',
