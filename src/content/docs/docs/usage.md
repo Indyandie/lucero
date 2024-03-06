@@ -4,4 +4,4 @@ title: usage
 
 # Usage
 
-hello.
+Hello world!
