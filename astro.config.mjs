@@ -10,7 +10,7 @@ export default defineConfig({
 		starlight({
 			title: '🌕 Lucero',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/indyandie/lucero',
 			},
 			plugins: [
         // Generate the OpenAPI documentation pages.
