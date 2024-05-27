@@ -18,12 +18,12 @@ export default defineConfig({
           {
            base: 'api/openai',
            label: 'openAI',
-           schema: './apis/openai.yml',
+           schema: 'https://raw.githubusercontent.com/openai/openai-openapi/master/openapi.yaml',
           },
           {
            base: 'api/pokeapi',
            label: 'PokeAPI',
-           schema: './apis/pokeapi.yml',
+           schema: 'https://raw.githubusercontent.com/PokeAPI/pokeapi/master/openapi.yml',
           },
         ]),
       ],
