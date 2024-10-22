@@ -1,3 +1,14 @@
 {
-  "nodeModulesDir": "manual"
+  "nodeModulesDir": "manual",
+  "imports": {
+    "fs": "node:fs",
+    "util": "node:util",
+    "https": "node:https",
+    "http": "node:http",
+    "os": "node:os",
+    "tty": "node:tty",
+    "path": "node:path",
+    "url": "node:url",
+    "@readme/openapi-parser": "npm:@readme/openapi-parser@2.5.0"
+  }
 }
