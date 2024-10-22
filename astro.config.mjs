@@ -37,8 +37,8 @@ export default defineConfig({
           items: openAPISidebarGroups,
         },
         {
-          label: 'Elements',
-          autogenerate: { directory: 'elements' },
+          label: 'Stoplight',
+          autogenerate: { directory: 'stoplight' },
         },
       ],
     }),
