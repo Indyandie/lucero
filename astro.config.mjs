@@ -12,6 +12,9 @@ export default defineConfig({
       social: {
         github: 'https://github.com/indyandie/lucero',
       },
+      components: {
+        ContentPanel: './src/components/overrides/CustomContentPanel.astro'
+      },
       plugins: [
         // Generate the OpenAPI documentation pages.
         starlightOpenAPI([
@@ -37,8 +40,8 @@ export default defineConfig({
           items: openAPISidebarGroups,
         },
         {
-          label: 'Stoplight',
-          autogenerate: { directory: 'stoplight' },
+          label: 'Stoplight Elements',
+          autogenerate: { directory: 'stoplight-elements' },
         },
       ],
     }),

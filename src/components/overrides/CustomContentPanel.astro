@@ -1,0 +1,22 @@
+---
+import type { Props } from '@astrojs/starlight/props'
+import Default from '@astrojs/starlight/components/ContentPanel.astro'
+const pageSlug = Astro.props.slug
+---
+{
+  pageSlug === 'rapidoc/pokeapi' || pageSlug === 'stoplight-elements/pokeapi' ? (
+    <section>
+      <slot />
+    </section>
+  ) : (
+    <Default {...Astro.props}>
+      <slot />
+    </Default>
+  )
+}
+
+<style>
+  section:first-child {
+    display: none;
+  }
+</style>
