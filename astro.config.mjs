@@ -43,6 +43,10 @@ export default defineConfig({
           label: 'Stoplight Elements',
           autogenerate: { directory: 'stoplight-elements' },
         },
+        {
+          label: 'RapiDoc',
+          autogenerate: { directory: 'rapidoc' },
+        },
       ],
     }),
   ],
