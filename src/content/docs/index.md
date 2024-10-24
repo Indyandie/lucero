@@ -16,4 +16,3 @@ hero:
       attrs:
         rel: me
 ---
-
