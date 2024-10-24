@@ -11,7 +11,8 @@ hero:
       variant: primary
     - text: View on GitHub
       link: https://github.com/indyandie/lucero
-      icon: external
+      icon: github
+      variant: secondary
       attrs:
         rel: me
 ---
