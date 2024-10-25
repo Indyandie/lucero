@@ -13,7 +13,7 @@ export default defineConfig({
         github: 'https://github.com/indyandie/lucero',
       },
       components: {
-        ContentPanel: './src/components/overrides/CustomContentPanel.astro'
+        ContentPanel: './src/components/overrides/CustomContentPanel.astro',
       },
       plugins: [
         // Generate the OpenAPI documentation pages.
@@ -50,4 +50,12 @@ export default defineConfig({
       ],
     }),
   ],
+  vite: {
+    server: {
+      watch: {
+        useFsEvents: false,
+        usePolling: true,
+      },
+    },
+  },
 })
