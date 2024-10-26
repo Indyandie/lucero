@@ -5,7 +5,7 @@ tableOfContents:
   maxHeadingLevel: 2
 sidebar:
   label: extended
-lastUpdated: 2022-10-25
+lastUpdated: 2022-10-26
 next: false
 ---
 
@@ -109,6 +109,54 @@ This is for ~~strikethrough~~ deleted text
 </table>
 ```
 
+## Asides/Callouts
+
+:::note
+This is a **note** aside.
+:::
+
+:::tip
+This is a **tip** aside.
+:::
+
+:::caution
+This is a **caution** aside.
+:::
+
+:::danger
+This is a **danger** aside.
+:::
+
+```markdown title="markdown"
+:::note
+This is a **note** aside.
+:::
+
+:::tip
+This is a **tip** aside.
+:::
+
+:::caution
+This is a **caution** aside.
+:::
+
+:::danger
+This is a **danger** aside.
+:::
+```
+
+### Custom Titles
+
+:::tip[This is a _Custom_ Title]
+Check it out!
+:::
+
+```markdown title="markdown"
+:::tip[This is a _Custom_ Title]
+Check it out!
+:::
+```
+
 ## Task List
 
 - [x] Start
@@ -157,6 +205,7 @@ This has a footnote. [^1]
 
 ```markdown
 <!-- Emojis -->
+
 emoji :joy:
 
 <!-- Heading ID -->
