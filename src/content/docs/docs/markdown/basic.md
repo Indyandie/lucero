@@ -5,7 +5,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
-lastUpdated: 2022-10-25
+lastUpdated: 2022-10-26
 ---
 
 ## Section Heading `<h1> - <h6>`
@@ -113,6 +113,48 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 
 - [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element)
 - [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/strong)
+
+## Block Quotation `<blockquote>`
+
+> The `blockquote` element represents a section that is quoted from _another source_.
+>
+>> **Example**
+>>
+>> ```html
+>> <blockquote>
+>>   <p>[Jane] then said she liked [...] fish.</p>
+>> </blockquote>
+>> ```
+
+````markdown title="markdown"
+> The `blockquote` element represents a section that is quoted from _another source_.
+>
+>> **Example**
+>>
+>> ```html
+>> <blockquote>
+>>   <p>[Jane] then said she liked [...] fish.</p>
+>> </blockquote>
+>> ```
+````
+
+```html title="html"
+<blockquote>
+  <p>
+    The <code>blockquote</code> element represents a section that is quoted from <em>another source</em>.
+  </p>
+  <blockquote>
+    <p><strong>Example</strong></p>
+    <div class="sourceCode" id="cb1"><pre class="sourceCode html">
+<code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">blockquote</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>[Jane] then said she liked [...] fish.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">blockquote</span><span class="dt">&gt;</span></span></code></pre></div>
+  </blockquote>
+</blockquote>
+```
+
+- [HTML standard]()
+- [MDN reference]()
 
 ## Image `<img>`
 
