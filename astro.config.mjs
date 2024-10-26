@@ -1,10 +1,13 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, squooshImageService } from 'astro/config'
 import starlight from '@astrojs/starlight'
 import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://indyandie.github.io/',
+  image: {
+    service: squooshImageService(),
+  },
   base: '/lucero',
   integrations: [
     starlight({

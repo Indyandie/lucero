@@ -158,11 +158,11 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 
 ## Image `<img>`
 
-![GIF of the earth spinning](/lucero/images/earth.gif)
+![Astro mascot with a hard hat](../../../../assets/images/houston.webp)
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
 
 ```markdown title="markdown"
-![gif of the earth spinning](/lucero/images/earth.gif)
+![Astro mascot with a hard hat](../../../../assets/images/houston.webp)
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
 ```
 
