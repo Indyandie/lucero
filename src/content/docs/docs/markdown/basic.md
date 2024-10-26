@@ -8,158 +8,223 @@ tableOfContents:
 lastUpdated: 2022-10-25
 ---
 
-### Section Heading `<h1> - <h6>`
+## Section Heading `<h1> - <h6>`
 
-# H1
+# h1
 
-## H2
+## h2
 
-### H3
+### h3
 
-#### H4
+#### h4
 
-##### H5
+##### h5
 
-###### H6
+###### h6
 
-```md
-# H1
+```markdown title="markdown"
+# h1
 
-## H2
+## h2
 
-### H3
+### h3
 
-#### H4
+#### h4
 
-##### H5
+##### h5
 
-###### H6
+###### h6
 ```
 
-- [HTML Standard](https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
-- [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
+```html title="html"
+<h1 id="h1">h1</h1>
+<h2 id="h2">h2</h2>
+<h3 id="h3">h3</h3>
+<h4 id="h4">h4</h4>
+<h5 id="h5">h5</h5>
+<h6 id="h6">h6</h6>
+```
 
-### Inline Code `<code>`
+- [html standard](https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
+- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/heading_elements)
 
-A fragment of computer code:
+## Inline Code `<code>`
+
+a fragment of computer code:
 element name (`code`),
 filename (`index.html`),
 computer program (`cat`),
 or any string a computer would recognize (`~`, `if`, `else`).
 
-```md
-A fragment of computer code:
+```markdown title="markdown"
+a fragment of computer code:
 element name (`code`),
 filename (`index.html`),
 computer program (`cat`),
 or any string a computer would recognize (`~`, `if`, `else`).
 ```
 
-- [HTML Standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element)
-- [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)
-
-### Emphasis `<em>`
-
-Stress _emphasis_ on the right _syllable_.
-
-```md
-Stress _emphasis_ on the right _syllable_.
+```html title="html"
+<p>
+  a fragment of computer code: element name (<code>code</code>), filename (<code>index.html</code>), computer program (<code>cat</code>), or any string a computer would recognize (<code>~</code>,
+  <code>if</code>, <code>else</code>).
+</p>
 ```
 
-- [HTML Standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element)
-- [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em)
+- [html standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element)
+- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/code)
 
-### Strong Importance `<strong>`
+## Emphasis `<em>`
+
+stress _emphasis_ on the right _syllable_.
+
+```markdown title="markdown"
+stress _emphasis_ on the right _syllable_.
+```
+
+```html title="html"
+<p>
+  stress <em>emphasis</em> on the right <em>syllable</em>.
+</p>
+```
+
+- [html standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element)
+- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/em)
+
+## Strong Importance `<strong>`
 
 **strong importance:**
-It should not be used to apply **bold styling**, use **`CSS`** for that.
-**Don't use** `<b>` for styling either!
+it should not be used to apply **bold styling**, use **`css`** for that.
+**don't use** `<b>` for styling either!
 
-```md
+```markdown title="markdown"
 **strong importance:**
-It should not be used to apply **bold styling**, use **`CSS`** for that.
-**Don't use** `<b>` for styling either!
+it should not be used to apply **bold styling**, use **`css`** for that.
+**don't use** `<b>` for styling either!
 ```
 
-- [HTML Standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element)
-- [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)
+```html title="html"
+<p>
+  <strong>strong importance:</strong> it should not be used to apply
+  <strong>bold styling</strong>, use <strong><code>css</code></strong> for that. <strong>don't use</strong>
+  <code>&lt;b&gt;</code> for styling either!
+</p>
+```
 
-### Image `<img>`
+- [html standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element)
+- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/strong)
 
-![GIF of the earth spinning](/lucero/images/earth.gif)
+## Image `<img>`
+
+![gif of the earth spinning](/lucero/images/earth.gif)
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
 
-```md
-![GIF of the earth spinning](/lucero/images/earth.gif)
+```markdown title="markdown"
+![gif of the earth spinning](/lucero/images/earth.gif)
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
 ```
 
-- [HTML Standard](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element)
-- [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+```html title="html"
+<p>
+  <img src="/lucero/images/earth.gif" alt="gif of the earth spinning" />
+  <img
+    src="/lucero/images/not-available.png"
+    alt="replacement text if the image isn&#39;t available"
+  />
+</p>
+```
 
-### Anchor/Hyperlink `<a>`
+- [html standard](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element)
+- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/img)
+
+## Anchor/Hyperlink `<a>`
 
 link to [usage](../../usage/),
-[Astro](https://docs.astro.build/en/getting-started/) (external link),
+[astro](https://docs.astro.build/en/getting-started/) (external link),
 anchor to [code section](#inline-code-code)
 
-```md
+```markdown title="markdown"
 link to [usage](../../usage/),
-[Astro](https://docs.astro.build/en/getting-started/) (external link),
+[astro](https://docs.astro.build/en/getting-started/) (external link),
 anchor to [code section](#inline-code-code)
 ```
 
-- [HTML Standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element)
-- [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
+```html title="html"
+<p>
+  link to <a href="../../usage/">usage</a>, <a href="https://docs.astro.build/en/getting-started/">astro</a> (external link), anchor to <a href="#inline-code-code">code section</a>
+</p>
+```
 
-### Unordered List `<ul>`
+- [html standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element)
+- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/a)
+
+## Unordered List `<ul>`
 
 - apple
 - dog
 - number
 
-```md
+```markdown title="markdown"
 - apple
 - dog
 - number
 ```
 
-- [HTML Standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)
-- [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
+```html title="html"
+<ul>
+  <li>apple</li>
+  <li>dog</li>
+  <li>number</li>
+</ul>
+```
 
-### Ordered List `<ol>`
+- [html standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)
+- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/ul)
+
+## Ordered List `<ol>`
 
 1. item 01
 1. item 02
 1. item 03
 
-```md
+```markdown title="markdown"
 1. item 01
 1. item 02
 1. item 03
 ```
 
-- [HTML Standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element)
-- [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)
+```html title="html"
+<ol type="1">
+  <li>item 01</li>
+  <li>item 02</li>
+  <li>item 03</li>
+</ol>
+```
 
-### Thematic Break `<hr>`
+- [html standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element)
+- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/ol)
 
-This is topic 1.
+## Thematic Break `<hr>`
+
+this is topic 1.
 
 ---
 
-This is topic 2.
+this is topic 2.
 
-```md
-This is topic 1.
+```markdown title="markdown"
+this is topic 1.
 
 ---
 
-This is topic 2.
+this is topic 2.
 ```
 
-- [HTML Standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element)
-- [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr)
+```html title="html"
+<p>this is topic 1.</p>
+<hr />
+<p>this is topic 2.</p>
+```
 
-```
-```
+- [html standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element)
+- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/hr)
