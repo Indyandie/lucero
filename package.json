@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/markdown-remark": "^5.3.0",
     "@astrojs/starlight": "^0.28.3",
-    "astro": "^4.16.6",
+    "astro": "^4.16.7",
     "starlight-openapi": "^0.8.1"
   }
 }
