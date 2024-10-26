@@ -1,5 +1,11 @@
 ---
 title: Basic Syntax
+sidebar:
+  label: basic
+tableOfContents:
+  minHeadingLevel: 2
+  maxHeadingLevel: 2
+lastUpdated: 2022-10-25
 ---
 
 ### Section Heading `<h1> - <h6>`
