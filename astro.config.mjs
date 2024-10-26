@@ -36,16 +36,21 @@ export default defineConfig({
           autogenerate: { directory: 'docs' },
         },
         {
-          label: 'APIs',
-          items: openAPISidebarGroups,
-        },
-        {
-          label: 'Stoplight Elements',
-          autogenerate: { directory: 'stoplight-elements' },
-        },
-        {
-          label: 'RapiDoc',
-          autogenerate: { directory: 'rapidoc' },
+          label: 'OpenAPI',
+          items: [
+            {
+              label: 'starlight-openapi',
+              items: openAPISidebarGroups,
+            },
+            {
+              label: 'Stoplight Elements',
+              autogenerate: { directory: 'openapi/stoplight-elements' },
+            },
+            {
+              label: 'RapiDoc',
+              autogenerate: { directory: 'openapi/rapidoc' },
+            },
+          ],
         },
       ],
     }),
