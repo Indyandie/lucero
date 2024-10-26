@@ -45,12 +45,12 @@ lastUpdated: 2022-10-25
 <h6 id="h6">h6</h6>
 ```
 
-- [html standard](https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
-- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/heading_elements)
+- [HTML standard](https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/heading_elements)
 
 ## Inline Code `<code>`
 
-a fragment of computer code:
+A fragment of computer code:
 element name (`code`),
 filename (`index.html`),
 computer program (`cat`),
@@ -71,12 +71,12 @@ or any string a computer would recognize (`~`, `if`, `else`).
 </p>
 ```
 
-- [html standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element)
-- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/code)
+- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/code)
 
 ## Emphasis `<em>`
 
-stress _emphasis_ on the right _syllable_.
+Stress _emphasis_ on the right _syllable_.
 
 ```markdown title="markdown"
 stress _emphasis_ on the right _syllable_.
@@ -84,23 +84,23 @@ stress _emphasis_ on the right _syllable_.
 
 ```html title="html"
 <p>
-  stress <em>emphasis</em> on the right <em>syllable</em>.
+  Stress <em>emphasis</em> on the right <em>syllable</em>.
 </p>
 ```
 
-- [html standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element)
-- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/em)
+- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/em)
 
 ## Strong Importance `<strong>`
 
-**strong importance:**
+**Strong importance:**
 it should not be used to apply **bold styling**, use **`css`** for that.
-**don't use** `<b>` for styling either!
+**Don't use** `<b>` for styling either!
 
 ```markdown title="markdown"
-**strong importance:**
+**Strong importance:**
 it should not be used to apply **bold styling**, use **`css`** for that.
-**don't use** `<b>` for styling either!
+**Don't use** `<b>` for styling either!
 ```
 
 ```html title="html"
@@ -111,12 +111,12 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 </p>
 ```
 
-- [html standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element)
-- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/strong)
+- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/strong)
 
 ## Image `<img>`
 
-![gif of the earth spinning](/lucero/images/earth.gif)
+![GIF of the earth spinning](/lucero/images/earth.gif)
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
 
 ```markdown title="markdown"
@@ -134,8 +134,8 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 </p>
 ```
 
-- [html standard](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element)
-- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/img)
+- [HTML standard](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/img)
 
 ## Anchor/Hyperlink `<a>`
 
@@ -155,8 +155,8 @@ anchor to [code section](#inline-code-code)
 </p>
 ```
 
-- [html standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element)
-- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/a)
+- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/a)
 
 ## Unordered List `<ul>`
 
@@ -178,8 +178,8 @@ anchor to [code section](#inline-code-code)
 </ul>
 ```
 
-- [html standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)
-- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/ul)
+- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/ul)
 
 ## Ordered List `<ol>`
 
@@ -201,30 +201,50 @@ anchor to [code section](#inline-code-code)
 </ol>
 ```
 
-- [html standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element)
-- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/ol)
+- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/ol)
 
 ## Thematic Break `<hr>`
 
-this is topic 1.
+This is topic 1.
 
 ---
 
-this is topic 2.
+This is topic 2.
+
+---
+
+This is topic 3.
+
+---
+
+This is topic 4.
 
 ```markdown title="markdown"
-this is topic 1.
+This is topic 1.
 
 ---
 
-this is topic 2.
+This is topic 2.
+
+---
+
+This is topic 3.
+
+---
+
+This is topic 4.
 ```
 
 ```html title="html"
-<p>this is topic 1.</p>
+<p>This is topic 1.</p>
 <hr />
-<p>this is topic 2.</p>
+<p>This is topic 2.</p>
+<hr />
+<p>This is topic 3.</p>
+<hr />
+<p>This is topic 4.</p>
 ```
 
-- [html standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element)
-- [mdn reference](https://developer.mozilla.org/en-us/docs/web/html/element/hr)
+- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/hr)
