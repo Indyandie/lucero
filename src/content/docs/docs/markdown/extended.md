@@ -192,7 +192,7 @@ This has a footnote. [^1]
 ```html title="html"
 <p>This has a footnote. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-  <hr />
+  <hr>
   <ol>
     <li id="fn1"><p>footnote<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
   </ol>

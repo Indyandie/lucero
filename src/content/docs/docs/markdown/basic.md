@@ -280,11 +280,11 @@ This is topic 4.
 
 ```html title="html"
 <p>This is topic 1.</p>
-<hr />
+<hr>
 <p>This is topic 2.</p>
-<hr />
+<hr>
 <p>This is topic 3.</p>
-<hr />
+<hr>
 <p>This is topic 4.</p>
 ```
 
