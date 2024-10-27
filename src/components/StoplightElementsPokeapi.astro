@@ -4,10 +4,9 @@ import elementStylesRaw from '../assets/stoplight-elements/css/styles.min.css?ra
 
 <script src="../assets/stoplight-elements/js/web-component.min.js"></script>
 
-<div class="not-content">
-  <style is:inline set:html={elementStylesRaw}></style>
-  <elements-api
-    apiDescriptionUrl="https://raw.githubusercontent.com/PokeAPI/pokeapi/master/openapi.yml"
-    router="hash"
-  />
-</div>
+<style is:inline set:html={elementStylesRaw}></style>
+<elements-api
+  class="not-content"
+  apiDescriptionUrl="/lucero/openapi-documents/pokeapi.yaml"
+  router="hash"
+/>
