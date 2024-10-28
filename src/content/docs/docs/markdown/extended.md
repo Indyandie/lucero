@@ -13,7 +13,7 @@ next: false
 
 This is for ~~strikethrough~~ deleted text
 
-```markdown title="markdown"
+```markdown title="markdown" '~~strikethrough~~'
 This is for ~~strikethrough~~ deleted text
 ```
 
@@ -31,7 +31,7 @@ This is for ~~strikethrough~~ deleted text
 }
 ```
 
-````markdown title="markdown"
+````markdown title="markdown"  /(.{3}json)|([^a-zA-Z]{3}$)/
 ```json
 {
   "firstName": "John",
@@ -61,7 +61,7 @@ This is for ~~strikethrough~~ deleted text
 | [**`<tr>`**](https://html.spec.whatwg.org/multipage/tables.html#the-tr-element)       | a row of cells                                   |
 | [**`<td>`**](https://html.spec.whatwg.org/multipage/tables.html#the-td-element)       | a data cell                                      |
 
-```markdown title="markdown"
+```markdown title="markdown" '|' /-{3,}/
 | element                                                                               | description                                      |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------ |
 | [**`<table>`**](https://html.spec.whatwg.org/multipage/tables.html#the-table-element) | represents tabular data                          |
@@ -127,7 +127,7 @@ This is a **caution** aside.
 This is a **danger** aside.
 :::
 
-```markdown title="markdown"
+```markdown title="markdown" /(:{3}(\w+|))/
 :::note
 This is a **note** aside.
 :::
@@ -151,7 +151,7 @@ This is a **danger** aside.
 Check it out!
 :::
 
-```markdown title="markdown"
+```markdown title="markdown" '[This is a _Custom_ Title]'
 :::tip[This is a _Custom_ Title]
 Check it out!
 :::
@@ -163,7 +163,7 @@ Check it out!
 - [ ] Continue
 - [ ] Stop
 
-```markdown title="markdown"
+```markdown title="markdown" '- [ ] ' '- [x] '
 - [x] Start
 - [ ] Continue
 - [ ] Stop
@@ -183,7 +183,7 @@ This has a footnote. [^1]
 
 [^1]: footnote
 
-```markdown title="markdown"
+```markdown title="markdown" '[^1]' '[^1]: footnote'
 This has a footnote. [^1]
 
 [^1]: footnote
