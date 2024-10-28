@@ -26,6 +26,17 @@ lastUpdated: 2022-10-27
 
 ---
 
+:::note[HTML Output]
+
+All `HTML` output examples are generated with [`pandoc`](https://pandoc.org/).
+
+```shell frame="none"
+pandoc -f gfm -t html <<< '**Markdown**'
+# <p><strong>Markdown</strong></p>
+```
+
+:::
+
 ## Section Heading `<h1> - <h6>`
 
 # h1
