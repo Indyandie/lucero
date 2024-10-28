@@ -8,6 +8,24 @@ tableOfContents:
 lastUpdated: 2022-10-26
 ---
 
+<blockquote cite="https://daringfireball.net/projects/markdown/syntax#philosophy">
+<b>Markdown</b> is intended to be as <em>easy-to-read</em> and <em>easy-to-write</em> as is feasible.
+</blockquote>
+
+**John Gruber**
+
+## References
+
+- [Markdown (Daring Fireball)](https://daringfireball.net/projects/markdown/)
+- [Authoring Content in Markdown (Starlight)](https://starlight.astro.build/guides/authoring-content/)
+  - [Markdown in Astro](https://docs.astro.build/en/guides/markdown-content/)
+- [CommonMark Spec](https://commonmark.org/)
+- [GitHub Flavored Markdown (GFM) Spec](https://github.github.com/gfm/)
+  - [GitHub Docs (Markdown)](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs#alerts)
+- [Cheat Sheet (Markdown Guide)](https://www.markdownguide.org/cheat-sheet/)
+
+---
+
 ## Section Heading `<h1> - <h6>`
 
 # h1

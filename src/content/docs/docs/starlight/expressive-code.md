@@ -8,7 +8,11 @@ tableOfContents:
 lastUpdated: 2022-10-26
 ---
 
+A _quick_ overview of [**Expressive Code**](https://expressive-code.com/) features.
+
 ## Word Wrap
+
+- [Expressive Code Docs](https://expressive-code.com/key-features/word-wrap/)
 
 ### No Wrap (default)
 
@@ -80,6 +84,8 @@ function printText() {
 
 ## Editor & Terminal Frames
 
+- [Expressive Code Docs](https://expressive-code.com/key-features/frames/)
+
 ### Code Editor Frame
 
 ```js title="test-file.js"
@@ -143,6 +149,8 @@ console.log("Hello, terminal!");
 ````
 
 ## Markers
+
+- [Expressive Code Docs](https://expressive-code.com/key-features/text-markers/)
 
 ### Line Markers
 
@@ -353,6 +361,8 @@ function formatType(linetext, markerType = "mark") {
 ````
 
 ## Diff Syntax
+
+- [Expressive Code Docs](https://expressive-code.com/key-features/text-markers/#using-diff-like-syntax)
 
 ### Basic
 
