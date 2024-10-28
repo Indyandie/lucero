@@ -5,7 +5,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
-lastUpdated: 2022-10-26
+lastUpdated: 2022-10-27
 ---
 
 <blockquote cite="https://daringfireball.net/projects/markdown/syntax#philosophy">
@@ -40,7 +40,7 @@ lastUpdated: 2022-10-26
 
 ###### h6
 
-```markdown title="markdown" /#+ /
+```markdown title="Markdown:" /#+ /
 # h1
 
 ## h2
@@ -54,7 +54,7 @@ lastUpdated: 2022-10-26
 ###### h6
 ```
 
-```html title="html"
+```html title="HTML output:"
 <h1 id="h1">h1</h1>
 <h2 id="h2">h2</h2>
 <h3 id="h3">h3</h3>
@@ -74,7 +74,7 @@ filename (`index.html`),
 computer program (`cat`),
 or any string a computer would recognize (`~`, `if`, `else`).
 
-```markdown title="markdown" /`[a-zA-Z-.~]+`/
+```markdown title="Markdown:" /`[a-zA-Z-.~]+`/
 a fragment of computer code:
 element name (`code`),
 filename (`index.html`),
@@ -82,7 +82,7 @@ computer program (`cat`),
 or any string a computer would recognize (`~`, `if`, `else`).
 
 ````
-```html title="html"
+```html title="HTML output:"
 <p>
   a fragment of computer code: element name (<code>code</code>), filename (<code>index.html</code>), computer program (<code>cat</code>), or any string a computer would recognize (<code>~</code>,
   <code>if</code>, <code>else</code>).
@@ -96,11 +96,11 @@ or any string a computer would recognize (`~`, `if`, `else`).
 
 Stress _emphasis_ on the right _syllable_.
 
-```markdown title="markdown" /(_\w+_)/
+```markdown title="Markdown:" /(_\w+_)/
 stress _emphasis_ on the right _syllable_.
 ```
 
-```html title="html"
+```html title="HTML output:"
 <p>
   Stress <em>emphasis</em> on the right <em>syllable</em>.
 </p>
@@ -115,13 +115,13 @@ stress _emphasis_ on the right _syllable_.
 it should not be used to apply **bold styling**, use **`css`** for that.
 **Don't use** `<b>` for styling either!
 
-```markdown title="markdown" '**Strong importance:**' '**`css`**' '**bold styling**' '**Don't use**'
+```markdown title="Markdown:" '**Strong importance:**' '**`css`**' '**bold styling**' '**Don't use**'
 **Strong importance:**
 it should not be used to apply **bold styling**, use **`css`** for that.
 **Don't use** `<b>` for styling either!
 
 ````
-```html title="html"
+```html title="HTML output:"
 <p>
   <strong>strong importance:</strong> it should not be used to apply
   <strong>bold styling</strong>, use <strong><code>css</code></strong> for that. <strong>don't use</strong>
@@ -144,7 +144,7 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 >> </blockquote>
 >> ```
 
-````markdown title="markdown" />+/
+````markdown title="Markdown:" />+/
 > The `blockquote` element represents a section that is quoted from _another source_.
 >
 >> **Example**
@@ -156,7 +156,7 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 >> ```
 ````
 
-```html title="html"
+```html title="HTML output:"
 <blockquote>
   <p>
     The <code>blockquote</code> element represents a section that is quoted from <em>another source</em>.
@@ -179,12 +179,12 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 ![Astro mascot with a hard hat](../../../../assets/images/houston.webp)
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
 
-```markdown title="markdown" '![' '](' ')'
+```markdown title="Markdown:" '![' '](' ')'
 ![Astro mascot with a hard hat](../../../../assets/images/houston.webp)
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
 ```
 
-```html title="html"
+```html title="HTML output:"
 <p>
   <img src="/lucero/images/earth.gif" alt="gif of the earth spinning" />
   <img
@@ -203,13 +203,13 @@ link to [usage](../../usage/),
 [astro](https://docs.astro.build/en/getting-started/),
 anchor to [code section](#inline-code-code)
 
-```markdown title="markdown" '[' '](' ')'
+```markdown title="Markdown:" '[' '](' ')'
 link to [usage](../../usage/),
 [astro](https://docs.astro.build/en/getting-started/),
 anchor to [code section](#inline-code-code)
 ```
 
-```html title="html"
+```html title="HTML output:"
 <p>
   link to <a href="../../usage/">usage</a>, <a href="https://docs.astro.build/en/getting-started/">astro</a>, anchor to
   <a href="#inline-code-code">code section</a>
@@ -225,13 +225,13 @@ anchor to [code section](#inline-code-code)
 - dog
 - number
 
-```markdown title="markdown" '- '
+```markdown title="Markdown:" '- '
 - apple
 - dog
 - number
 ```
 
-```html title="html"
+```html title="HTML output:"
 <ul>
   <li>apple</li>
   <li>dog</li>
@@ -248,13 +248,13 @@ anchor to [code section](#inline-code-code)
 1. item 02
 1. item 03
 
-```markdown title="markdown" '1. '
+```markdown title="Markdown:" '1. '
 1. item 01
 1. item 02
 1. item 03
 ```
 
-```html title="html"
+```html title="HTML output:"
 <ol type="1">
   <li>item 01</li>
   <li>item 02</li>
@@ -281,7 +281,7 @@ This is topic 3.
 
 This is topic 4.
 
-```markdown title="markdown" '---'
+```markdown title="Markdown:" '---'
 This is topic 1.
 
 ---
@@ -297,7 +297,7 @@ This is topic 3.
 This is topic 4.
 ```
 
-```html title="html"
+```html title="HTML output:"
 <p>This is topic 1.</p>
 <hr>
 <p>This is topic 2.</p>

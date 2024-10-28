@@ -5,7 +5,7 @@ tableOfContents:
   maxHeadingLevel: 2
 sidebar:
   label: extended
-lastUpdated: 2022-10-26
+lastUpdated: 2022-10-27
 next: false
 ---
 
@@ -13,11 +13,11 @@ next: false
 
 This is for ~~strikethrough~~ deleted text
 
-```markdown title="markdown" '~~strikethrough~~'
+```markdown title="Markdown:" '~~strikethrough~~'
 This is for ~~strikethrough~~ deleted text
 ```
 
-```html title="html"
+```html title="HTML output:"
 <p>This is for <del>strikethrough</del> deleted text</p>
 ```
 
@@ -31,7 +31,7 @@ This is for ~~strikethrough~~ deleted text
 }
 ```
 
-````markdown title="markdown"  /(.{3}json)|([^a-zA-Z]{3}$)/
+````markdown title="Markdown:"  /(.{3}json)|([^a-zA-Z]{3}$)/
 ```json
 {
   "firstName": "John",
@@ -41,7 +41,7 @@ This is for ~~strikethrough~~ deleted text
 ```
 ````
 
-```html title="html"
+```html title="HTML output:"
 <div class="sourceCode" id="cb1"><pre class="sourceCode json">
 <code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;firstName&quot;</span><span class="fu">:</span> <span class="st">&quot;John&quot;</span><span class="fu">,</span></span>
@@ -61,7 +61,7 @@ This is for ~~strikethrough~~ deleted text
 | [**`<tr>`**](https://html.spec.whatwg.org/multipage/tables.html#the-tr-element)       | a row of cells                                   |
 | [**`<td>`**](https://html.spec.whatwg.org/multipage/tables.html#the-td-element)       | a data cell                                      |
 
-```markdown title="markdown" '|' /-{3,}/
+```markdown title="Markdown:" '|' /-{3,}/
 | element                                                                               | description                                      |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------ |
 | [**`<table>`**](https://html.spec.whatwg.org/multipage/tables.html#the-table-element) | represents tabular data                          |
@@ -72,7 +72,7 @@ This is for ~~strikethrough~~ deleted text
 | [**`<td>`**](https://html.spec.whatwg.org/multipage/tables.html#the-td-element)       | a data cell                                      |
 ```
 
-```html title="html"
+```html title="HTML output:"
 <table>
   <thead>
     <tr class="header">
@@ -127,7 +127,7 @@ This is a **caution** aside.
 This is a **danger** aside.
 :::
 
-```markdown title="markdown" /(:{3}(\w+|))/
+```markdown title="Markdown:" /(:{3}(\w+|))/
 :::note
 This is a **note** aside.
 :::
@@ -151,7 +151,7 @@ This is a **danger** aside.
 Check it out!
 :::
 
-```markdown title="markdown" '[This is a _Custom_ Title]'
+```markdown title="Markdown:" '[This is a _Custom_ Title]'
 :::tip[This is a _Custom_ Title]
 Check it out!
 :::
@@ -163,13 +163,13 @@ Check it out!
 - [ ] Continue
 - [ ] Stop
 
-```markdown title="markdown" '- [ ] ' '- [x] '
+```markdown title="Markdown:" '- [ ] ' '- [x] '
 - [x] Start
 - [ ] Continue
 - [ ] Stop
 ```
 
-```html title="html"
+```html title="HTML output:"
 <ul class="task-list">
   <li><label><input type="checkbox" checked="" />Start</label></li>
   <li><label><input type="checkbox" />Continue</label></li>
@@ -183,13 +183,13 @@ This has a footnote. [^1]
 
 [^1]: footnote
 
-```markdown title="markdown" '[^1]' '[^1]: footnote'
+```markdown title="Markdown:" '[^1]' '[^1]: footnote'
 This has a footnote. [^1]
 
 [^1]: footnote
 ```
 
-```html title="html"
+```html title="HTML output:"
 <p>This has a footnote. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
   <hr>

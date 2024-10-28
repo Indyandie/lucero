@@ -5,7 +5,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
-lastUpdated: 2022-10-26
+lastUpdated: 2022-10-27
 ---
 
 A _quick_ overview of [**Expressive Code**](https://expressive-code.com/) features.
@@ -24,7 +24,7 @@ function printText() {
 }
 ```
 
-````markdown
+````markdown title="Markdown:"
 ```js
 function printText() {
   if (true) {
@@ -46,7 +46,7 @@ function printText() {
 }
 ```
 
-````markdown title="markdown" "wrap"
+````markdown title="Markdown:" "wrap"
 ```js wrap
 function printText() {
   if (true) {
@@ -70,7 +70,7 @@ function printText() {
 }
 ```
 
-````markdown title="markdown" "preserveIndent=false"
+````markdown title="Markdown:" "preserveIndent=false"
 ```js wrap preserveIndent=false
 function printText() {
   if (true) {
@@ -92,7 +92,7 @@ function printText() {
 console.log("Hello, star!");
 ```
 
-````markdown title="markdown" 'title="test-file.js"'
+````markdown title="Markdown:" 'title="test-file.js"'
 ```js title="test-file.js"
 console.log("Hello, star!");
 ```
@@ -120,7 +120,7 @@ console.log("Hello, star!");
 print 'Hello, star!'
 ```
 
-````markdown title="markdown" 'title="terminal"'
+````markdown title="Markdown:" 'title="terminal"'
 ```zsh title="terminal"
 print 'Hello, star!'
 ```
@@ -132,7 +132,7 @@ print 'Hello, star!'
 print 'Hello, code!'
 ```
 
-````markdown title="markdown" 'frame="code"'
+````markdown title="Markdown:" 'frame="code"'
 ```zsh title="terminal" frame="code"
 print 'Hello, code!'
 ```
@@ -142,7 +142,7 @@ print 'Hello, code!'
 console.log("Hello, terminal!");
 ```
 
-````markdown title="markdown" 'frame="terminal"'
+````markdown title="Markdown:" 'frame="terminal"'
 ```js title="test-file.js" frame="terminal"
 console.log("Hello, terminal!");
 ```
@@ -167,7 +167,7 @@ console.log("Hello, terminal!");
 // line 10
 ```
 
-````markdown title="markdown" '{1, 3, 6-7, 10}'
+````markdown title="Markdown:" '{1, 3, 6-7, 10}'
 ```js {1, 3, 6-7, 10}
 // line 01
 // line 02
@@ -210,7 +210,7 @@ function markerTypes(line, mType = "mark") {
 }
 ```
 
-````markdown title="markdown" "mark={1-6}" del="del={8-17}" ins="ins={17-22}"
+````markdown title="Markdown:" "mark={1-6}" del="del={8-17}" ins="ins={17-22}"
 ```js title="marker-type.js" mark={1-6} del={8-17} ins={17-22}
 /**
  * Apply marker type
@@ -253,7 +253,7 @@ function markerTypes(line, mType = "mark") {
 // line 10
 ```
 
-````markdown title="markdown" 'mark={"note (overlap)":1, 3-4}' del='del={"delete":6-7}' ins='ins={"insert":9-10}'
+````markdown title="Markdown:" 'mark={"note (overlap)":1, 3-4}' del='del={"delete":6-7}' ins='ins={"insert":9-10}'
 ```js mark={"note (overlap)":1, 3-4} del={"delete":6-7} ins={"insert":9-10}
 // line 01
 // line 02
@@ -284,7 +284,7 @@ function markerTypes(line, mType = "mark") {
 // "quotes"
 ```
 
-````markdown title="markdown" '"even"' "'"quotes"'"
+````markdown title="Markdown:" '"even"' "'"quotes"'"
 ```js "even" '"quotes"'
 // line 01: odd
 // line 02: even
@@ -317,7 +317,7 @@ function markerTypes(line, mType = "mark") {
 }
 ```
 
-````markdown title="markdown" '/((<|")(|/)mark("|>))|([</]{1,2}ins(>|"))|("del"|<del>|</del>)/' wrap
+````markdown title="Markdown:" '/((<|")(|/)mark("|>))|([</]{1,2}ins(>|"))|("del"|<del>|</del>)/' wrap
 ```js title="marker-type.js" /((<|")(|/)mark("|>))|([</]{1,2}ins(>|"))|("del"|<del>|</del>)/
 function markerTypes(line, mType = "mark") {
   switch (mType) {
@@ -347,7 +347,7 @@ function formatType(linetext, markerType = "mark") {
 }
 ```
 
-````markdown title="markdown" mark='mark="return false;"' del='del="line"' del='del="// TODO: rename stuff"' ins='ins=/arker|text/' wrap
+````markdown title="Markdown:" mark='mark="return false;"' del='del="line"' del='del="// TODO: rename stuff"' ins='ins=/arker|text/' wrap
 ```js title="formatType.js" mark="return false;" del="line" del="// TODO: rename stuff" ins=/arker|text/
 function formatType(linetext, markerType = "mark") {
   // TODO: rename stuff
@@ -372,7 +372,7 @@ function formatType(linetext, markerType = "mark") {
   regular
 ```
 
-````markdown title="markdown" 'diff'
+````markdown title="Markdown:" 'diff'
 ```diff
 - deleted
 + added
@@ -393,7 +393,7 @@ function formatType(linetext, markerType = "mark") {
  Unmodified
 ```
 
-````markdown title="markdown" {2-5}
+````markdown title="Markdown:" {2-5}
 ```diff
 --- a/test.md
 +++ b/test01.md
@@ -419,7 +419,7 @@ function hello(name = "world") {
 hello("star")
 ```
 
-````markdown title="markdown" 'lang="js"'
+````markdown title="Markdown:" 'lang="js"'
 ```diff lang="js"
 function hello(name = "world") {
 - const hello = "Hello " + name + "!"
