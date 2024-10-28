@@ -153,8 +153,8 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 </blockquote>
 ```
 
-- [HTML standard]()
-- [MDN reference]()
+- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element)
+- [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote)
 
 ## Image `<img>`
 
