@@ -1,6 +1,6 @@
 # 🌕 Lucero
 
-Documentation playground using [starlight](https://github.com/withastro/starlight) and [starlight-openapi](https://github.com/HiDeoo/starlight-openapi).
+Documentation playground using [starlight](https://starlight.astro.build/) and [starlight-openapi](https://starlight-openapi.vercel.app/).
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
@@ -12,16 +12,22 @@ Images can be added to `src/assets/` and embedded in Markdown with a relative li
 
 Static assets, like favicons, can be placed in the `public/` directory.
 
+---
+
 ### Commands
+
+> [!WARNING]
+> This repo uses the [Deno](https://deno.com/) runtime.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
+| command                              | action                                                                             |
+| :----------------------------------- | :--------------------------------------------------------------------------------- |
+| `deno install --allow-scripts`       | Installs dependencies                                                              |
+| `deno task dev`                      | Starts local dev server at `localhost:4321`                                        |
+| `deno task build`                    | Build your production site to `./dist/`                                            |
+| `deno task preview`                  | Preview your build locally, before deploying                                       |
+| `deno task astro ...`                | Run CLI commands like `astro add`, `astro check`                                   |
+| `deno task astro -- --help`          | Get help using the Astro CLI                                                       |
+| `deno run -A npm:@astrojs/upgrade`   | _"Update"_ **Astro** dependencies, use the command below to bump or install the dependencies. |
+| `deno add npm:<package>[@<version>]` | Add/Upgrade package                                                                |
