@@ -3,6 +3,13 @@ name: Deploy Astro to GitHub Pages with Deno
 on:
   push:
     branches: ["main"]
+    paths:
+      - src/**
+      - astro.config.mjs
+      - deno.json
+      - deno.lock
+      - public/**
+      - .github/workflow/**
 
   workflow_dispatch:
 
