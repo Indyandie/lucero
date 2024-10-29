@@ -13,7 +13,7 @@ next: false
 
 This is for ~~strikethrough~~ deleted text
 
-```markdown title="Markdown:" '~~strikethrough~~'
+```markdown title="Markdown:" /~~\w+~~/
 This is for ~~strikethrough~~ deleted text
 ```
 
@@ -31,7 +31,8 @@ This is for ~~strikethrough~~ deleted text
 }
 ```
 
-````markdown title="Markdown:"  /(.{3}json)|([^a-zA-Z]{3}$)/
+<!-- deno-fmt-ignore -->
+````markdown title="Markdown:"  /^&grave;{3}(?:\w+|)$/
 ```json
 {
   "firstName": "John",
@@ -127,7 +128,7 @@ This is a **caution** aside.
 This is a **danger** aside.
 :::
 
-```markdown title="Markdown:" /(:{3}(\w+|))/
+```markdown title="Markdown:" /:{3}(?:\w+|)/
 :::note
 This is a **note** aside.
 :::
@@ -163,7 +164,8 @@ Check it out!
 - [ ] Continue
 - [ ] Stop
 
-```markdown title="Markdown:" '- [ ] ' '- [x] '
+<!-- deno-fmt-ignore -->
+```markdown title="Markdown:" /- \\[(?:x| )\\] /
 - [x] Start
 - [ ] Continue
 - [ ] Stop
@@ -183,7 +185,8 @@ This has a footnote. [^1]
 
 [^1]: footnote
 
-```markdown title="Markdown:" '[^1]' '[^1]: footnote'
+<!-- deno-fmt-ignore -->
+```markdown title="Markdown:" /\\[\\^1\\](?:: \w+|)/
 This has a footnote. [^1]
 
 [^1]: footnote

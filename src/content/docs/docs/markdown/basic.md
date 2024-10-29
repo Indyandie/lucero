@@ -85,20 +85,22 @@ filename (`index.html`),
 computer program (`cat`),
 or any string a computer would recognize (`~`, `if`, `else`).
 
-```markdown title="Markdown:" /`[a-zA-Z-.~]+`/
+<!-- deno-fmt-ignore -->
+```markdown title="Markdown:" /&grave;[a-zA-Z-.~]+&grave;/
 a fragment of computer code:
 element name (`code`),
 filename (`index.html`),
 computer program (`cat`),
-or any string a computer would recognize (`~`, `if`, `else`).
+or any string a computer would recognize (`~`,`if`,`else`).
 
 ````
+
 ```html title="HTML output:"
 <p>
   a fragment of computer code: element name (<code>code</code>), filename (<code>index.html</code>), computer program (<code>cat</code>), or any string a computer would recognize (<code>~</code>,
   <code>if</code>, <code>else</code>).
 </p>
-````
+```
 
 - [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element)
 - [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/code)
@@ -107,7 +109,7 @@ or any string a computer would recognize (`~`, `if`, `else`).
 
 Stress _emphasis_ on the right _syllable_.
 
-```markdown title="Markdown:" /(_\w+_)/
+```markdown title="Markdown:" /_\w+_/
 stress _emphasis_ on the right _syllable_.
 ```
 
@@ -126,19 +128,20 @@ stress _emphasis_ on the right _syllable_.
 it should not be used to apply **bold styling**, use **`css`** for that.
 **Don't use** `<b>` for styling either!
 
-```markdown title="Markdown:" '**Strong importance:**' '**`css`**' '**bold styling**' '**Don't use**'
+<!-- deno-fmt-ignore -->
+```markdown title="Markdown:" /[*]{2}[\w :&grave;']+[*]{2}/
 **Strong importance:**
 it should not be used to apply **bold styling**, use **`css`** for that.
 **Don't use** `<b>` for styling either!
-
 ````
+
 ```html title="HTML output:"
 <p>
   <strong>strong importance:</strong> it should not be used to apply
   <strong>bold styling</strong>, use <strong><code>css</code></strong> for that. <strong>don't use</strong>
   <code>&lt;b&gt;</code> for styling either!
 </p>
-````
+```
 
 - [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element)
 - [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/strong)
@@ -155,7 +158,7 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 >> </blockquote>
 >> ```
 
-````markdown title="Markdown:" />+/
+````markdown title="Markdown:" /^>+(?:\s|\n|)/
 > The `blockquote` element represents a section that is quoted from _another source_.
 >
 >> **Example**
@@ -284,26 +287,29 @@ This is topic 1.
 
 This is topic 2.
 
----
+<!-- deno-fmt-ignore -->
+***
 
 This is topic 3.
 
----
+<!-- deno-fmt-ignore -->
+___
 
 This is topic 4.
 
-```markdown title="Markdown:" '---'
+<!-- deno-fmt-ignore -->
+```markdown title="Markdown:" /[-*_]{3}/
 This is topic 1.
 
 ---
 
 This is topic 2.
 
----
+***
 
 This is topic 3.
 
----
+___
 
 This is topic 4.
 ```
