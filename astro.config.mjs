@@ -60,6 +60,10 @@ export default defineConfig({
       expressiveCode: {
         themes: ['github-dark-dimmed'],
       },
+      customCss: [
+        // Relative path to your custom CSS file
+        './src/styles/custom.css',
+      ],
     }),
   ],
   vite: {
