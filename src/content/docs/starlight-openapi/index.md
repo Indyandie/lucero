@@ -11,13 +11,13 @@ The [Starlight OpenAPI](https://starlight-openapi.vercel.app/) plugin generates 
 
 ### Include `import`
 
-```js title="astro.config.mjs (import)"
-import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi'
+```js title="astro.config.mjs (import)" ins={1}
+import starlightOpenAPI, { openAPISidebarGroups } from "starlight-openapi";
 ```
 
 ### Add to `plugins`
 
-```js title="astro.config.mjs (plugin)"
+```js title="astro.config.mjs (plugin)" ins={3-14}
 plugins: [
   // Generate the OpenAPI documentation pages.
   starlightOpenAPI([
@@ -37,14 +37,17 @@ plugins: [
 
 ### Include in the `sidebar`
 
-```js title="astro.config.mjs (sidebar)"
+```js title="astro.config.mjs (sidebar)" ins={9} ins="openAPISidebarGroups"
 sidebar: [
   {
     label: "OpenAPI",
     items: [
       {
         label: "starlight-openapi",
-        items: ["starlight-openapi", ...openAPISidebarGroups],
+        items: [
+          ,"starlight-openapi", 
+          ...openAPISidebarGroups
+          ],
       },
       {
         label: "Stoplight Elements",
