@@ -58,7 +58,10 @@ export default defineConfig({
         },
       ],
       expressiveCode: {
-        themes: ['github-dark-dimmed'],
+        themes: [
+          'github-dark-dimmed',
+          'github-light',
+        ],
       },
       customCss: [
         // Relative path to your custom CSS file
