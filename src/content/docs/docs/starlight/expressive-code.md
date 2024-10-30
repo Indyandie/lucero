@@ -5,10 +5,32 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
-lastUpdated: 2022-10-27
+lastUpdated: 2022-10-29
 ---
 
 A _quick_ overview of [**Expressive Code**](https://expressive-code.com/) features.
+
+## Themes
+
+- [Expressive Code Docs](https://expressive-code.com/guides/themes/)
+- [Available Themes](https://expressive-code.com/guides/themes/#using-bundled-themes)
+
+### Configuration
+
+```js title="astro.config.mjs" {4-9} {" dark mode": 6} {"light mode": 7}
+export default defineConfig({
+  integrations: [
+    starlight({
+      expressiveCode: {
+        themes: [
+          "github-dark-dimmed",
+          "github-light",
+        ],
+      },
+    }),
+  ],
+});
+```
 
 ## Word Wrap
 
