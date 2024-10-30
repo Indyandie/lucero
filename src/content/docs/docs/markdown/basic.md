@@ -5,7 +5,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
-lastUpdated: 2022-10-27
+lastUpdated: 2022-10-29
 ---
 
 <blockquote cite="https://daringfireball.net/projects/markdown/syntax#philosophy">
@@ -38,6 +38,9 @@ pandoc -f gfm -t html <<< '**Markdown**'
 :::
 
 ## Section Heading `<h1> - <h6>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/heading_elements)
 
 # h1
 
@@ -74,10 +77,10 @@ pandoc -f gfm -t html <<< '**Markdown**'
 <h6 id="h6">h6</h6>
 ```
 
-- [HTML standard](https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
-- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/heading_elements)
-
 ## Inline Code `<code>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/code)
 
 A fragment of computer code:
 element name (`code`),
@@ -102,10 +105,10 @@ or any string a computer would recognize (`~`,`if`,`else`).
 </p>
 ```
 
-- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element)
-- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/code)
-
 ## Emphasis `<em>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/em)
 
 Stress _emphasis_ on the right _syllable_.
 
@@ -119,10 +122,10 @@ stress _emphasis_ on the right _syllable_.
 </p>
 ```
 
-- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element)
-- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/em)
-
 ## Strong Importance `<strong>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/strong)
 
 **Strong importance:**
 it should not be used to apply **bold styling**, use **`css`** for that.
@@ -143,10 +146,10 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 </p>
 ```
 
-- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element)
-- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/strong)
-
 ## Block Quotation `<blockquote>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element)
+- [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote)
 
 > The `blockquote` element represents a section that is quoted from _another source_.
 >
@@ -185,10 +188,10 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 </blockquote>
 ```
 
-- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element)
-- [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote)
-
 ## Image `<img>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/img)
 
 ![Astro mascot with a hard hat](../../../../assets/images/houston.webp)
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
@@ -208,10 +211,10 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 </p>
 ```
 
-- [HTML standard](https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element)
-- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/img)
-
 ## Anchor/Hyperlink `<a>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/a)
 
 link to [usage](../../usage/),
 [astro](https://docs.astro.build/en/getting-started/),
@@ -230,10 +233,10 @@ anchor to [code section](#inline-code-code)
 </p>
 ```
 
-- [HTML standard](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element)
-- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/a)
-
 ## Unordered List `<ul>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/ul)
 
 - apple
 - dog
@@ -253,10 +256,10 @@ anchor to [code section](#inline-code-code)
 </ul>
 ```
 
-- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)
-- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/ul)
-
 ## Ordered List `<ol>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/ol)
 
 1. item 01
 1. item 02
@@ -276,10 +279,10 @@ anchor to [code section](#inline-code-code)
 </ol>
 ```
 
-- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element)
-- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/ol)
-
 ## Thematic Break `<hr>`
+
+- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element)
+- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/hr)
 
 This is topic 1.
 
@@ -323,6 +326,3 @@ This is topic 4.
 <hr>
 <p>This is topic 4.</p>
 ```
-
-- [HTML standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element)
-- [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/hr)
