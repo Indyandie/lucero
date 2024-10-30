@@ -1,6 +1,7 @@
 ---
 title: Basic Syntax
 sidebar:
+  order: 10
   label: basic
 tableOfContents:
   minHeadingLevel: 2
