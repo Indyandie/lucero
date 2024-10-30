@@ -13,6 +13,7 @@ lastUpdated: 2022-10-27
 
 - [CSS & Styling](https://starlight.astro.build/guides/css-and-tailwind/)
 - [Color Theme Editor](https://starlight.astro.build/guides/css-and-tailwind/#color-theme-editor)
+- [Default `CSS` Properties](https://github.com/withastro/starlight/blob/main/packages/starlight/style/props.css)
 
 1. Add `CSS` files to the `/src/styles/` directory (or anywhere in `src`)
 
