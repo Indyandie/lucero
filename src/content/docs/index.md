@@ -2,8 +2,13 @@
 title: Lucero
 template: splash
 hero:
+  image:
+    alt: moon emoji
+    dark: ../../assets/images/twemoji/waxing-moon.svg
+    light: ../../assets/images/twemoji/first-quarter-moon.svg
+    # file: ../../assets/images/full-moon.svg # default - single file
   title: Lucero
-  tagline: Take your stuff to the moon and back in the blink of an eye.
+  tagline: Take your documentation to the moon and back in the blink of an eye.
   actions:
     - text: Get started
       link: /lucero/docs/usage/
@@ -12,7 +17,7 @@ hero:
     - text: View on GitHub
       link: https://github.com/indyandie/lucero
       icon: github
-      variant: secondary
+      variant: minimal
       attrs:
         rel: me
 ---
