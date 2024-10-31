@@ -14,9 +14,9 @@ export default defineConfig({
     starlight({
       title: 'Lucero',
       logo: {
-        // src: './src/assets/images/twemoji/full-moon.svg',
         dark: './src/assets/images/twemoji/full-moon.svg',
         light: './src/assets/images/twemoji/new-moon.svg',
+        // src: './src/assets/images/twemoji/first-quarter-moon.svg',
         replacesTitle: false,
       },
       social: {

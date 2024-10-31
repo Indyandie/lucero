@@ -1,11 +1,12 @@
 ---
 title: Lucero
+description: Hello
 template: splash
 hero:
   image:
     alt: moon emoji
-    dark: ../../assets/images/twemoji/waxing-moon.svg
-    light: ../../assets/images/twemoji/first-quarter-moon.svg
+    dark: ../../assets/images/twemoji/waning-gibbous-moon.svg
+    light: ../../assets/images/twemoji/waxing-crescent-moon.svg
     # file: ../../assets/images/full-moon.svg # default - single file
   title: Lucero
   tagline: Take your documentation to the moon and back in the blink of an eye.
