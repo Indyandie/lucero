@@ -12,7 +12,13 @@ export default defineConfig({
   base: '/lucero',
   integrations: [
     starlight({
-      title: '🌕 Lucero',
+      title: 'Lucero',
+      logo: {
+        // src: './src/assets/images/twemoji/full-moon.svg',
+        dark: './src/assets/images/twemoji/full-moon.svg',
+        light: './src/assets/images/twemoji/new-moon.svg',
+        replacesTitle: false,
+      },
       social: {
         github: 'https://github.com/indyandie/lucero',
       },
