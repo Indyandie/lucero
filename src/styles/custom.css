@@ -1,3 +1,10 @@
+/* fonts */
+
+:root {
+  --sl-font: "AtkinsonHyperlegible", serif;
+  --sl-font-system-mono: JetBrainsMono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 /* Dark mode colors. */
 :root {
   --sl-color-accent-low: #272500;
@@ -12,6 +19,7 @@
   --sl-color-gray-6: #272727;
   --sl-color-black: #181818;
 }
+
 /* Light mode colors. */
 :root[data-theme="light"] {
   --sl-color-accent-low: #f1cec1;
