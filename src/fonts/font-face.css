@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "AtkinsonHyperlegible";
+  src: url("./atkinson-hyperlegible/AtkinsonHyperlegible-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AtkinsonHyperlegible";
+  src: url("./atkinson-hyperlegible/AtkinsonHyperlegible-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "AtkinsonHyperlegibleItalic";
+  src: url("./atkinson-hyperlegible/AtkinsonHyperlegible-Italic.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AtkinsonHyperlegibleItalic";
+  src: url("./atkinson-hyperlegible/AtkinsonHyperlegible-BoldItalic.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./jetbrains-mono/fonts/webfonts/JetBrainsMono-Regular.woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./jetbrains-mono/fonts/webfonts/JetBrainsMono-Bold.woff2");
+  font-weight: bold;
+}
