@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "rm dist -rf && astro build",
+    "build-test": "rm dist -rf && astro build && rm dist -rf && echo 'Great success!' || echo 'Something went wrong'",
     "preview": "astro preview",
     "astro": "astro"
   },
