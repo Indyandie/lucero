@@ -6,7 +6,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
-lastUpdated: 2022-10-27
+lastUpdated: 2022-10-30
 ---
 
 ## Custom `CSS`
@@ -43,6 +43,23 @@ export default defineConfig({
       customCss: [
         "./src/styles/custom.css",
       ],
+    }),
+  ],
+});
+```
+
+## Logo
+
+```js title="astro.config.mjs" {4-9}
+export default defineConfig({
+  integrations: [
+    starlight({
+      logo: {
+        // src: './src/assets/images/twemoji/full-moon.svg',
+        dark: "./src/assets/images/twemoji/full-moon.svg",
+        light: "./src/assets/images/twemoji/new-moon.svg",
+        replacesTitle: false,
+      },
     }),
   ],
 });
