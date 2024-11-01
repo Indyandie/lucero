@@ -6,7 +6,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
-lastUpdated: 2022-10-30
+lastUpdated: 2022-10-31
 ---
 
 ## Custom `CSS`
@@ -64,3 +64,107 @@ export default defineConfig({
   ],
 });
 ```
+
+## Custom Fonts
+
+1. Add `CSS` and local font files under the `src` directory (`src/fonts`).
+
+   ```shell frame="none"
+   tree src/fonts
+   ```
+
+   ```ansi title="output" {"CSS": 2} {"Atkinson Hyperlegible": 3-8} {"Jetbrains Mono": 9-30}
+   src/fonts
+   ├── font-face.css
+   ├── atkinson-hyperlegible
+   │  ├── AtkinsonHyperlegible-Bold.ttf
+   │  ├── AtkinsonHyperlegible-BoldItalic.ttf
+   │  ├── AtkinsonHyperlegible-Italic.ttf
+   │  ├── AtkinsonHyperlegible-Regular.ttf
+   │  └── OFL.txt
+   └── jetbrains-mono
+      ├── AUTHORS.txt
+      ├── fonts
+      │  └── webfonts
+      │     ├── JetBrainsMono-Bold.woff2
+      │     ├── JetBrainsMono-BoldItalic.woff2
+      │     ├── JetBrainsMono-ExtraBold.woff2
+      │     ├── JetBrainsMono-ExtraBoldItalic.woff2
+      │     ├── JetBrainsMono-ExtraLight.woff2
+      │     ├── JetBrainsMono-ExtraLightItalic.woff2
+      │     ├── JetBrainsMono-Italic.woff2
+      │     ├── JetBrainsMono-Light.woff2
+      │     ├── JetBrainsMono-LightItalic.woff2
+      │     ├── JetBrainsMono-Medium.woff2
+      │     ├── JetBrainsMono-MediumItalic.woff2
+      │     ├── JetBrainsMono-Regular.woff2
+      │     ├── JetBrainsMono-SemiBold.woff2
+      │     ├── JetBrainsMono-SemiBoldItalic.woff2
+      │     ├── JetBrainsMono-Thin.woff2
+      │     └── JetBrainsMono-ThinItalic.woff2
+      └── OFL.txt
+   ```
+
+2. Specify `@font-face` for each local font in the `font-face.css` file.
+
+   ```css
+   @font-face {
+     font-family: "AtkinsonHyperlegible";
+     src: url("./atkinson-hyperlegible/AtkinsonHyperlegible-Regular.ttf");
+     font-weight: normal;
+   }
+
+   @font-face {
+     font-family: "AtkinsonHyperlegible";
+     src: url("./atkinson-hyperlegible/AtkinsonHyperlegible-Bold.ttf");
+     font-weight: bold;
+   }
+
+   @font-face {
+     font-family: "AtkinsonHyperlegibleItalic";
+     src: url("./atkinson-hyperlegible/AtkinsonHyperlegible-Italic.ttf");
+     font-weight: normal;
+   }
+
+   @font-face {
+     font-family: "AtkinsonHyperlegibleItalic";
+     src: url("./atkinson-hyperlegible/AtkinsonHyperlegible-BoldItalic.ttf");
+     font-weight: bold;
+   }
+
+   @font-face {
+     font-family: "JetBrainsMono";
+     src: url("./jetbrains-mono/fonts/webfonts/JetBrainsMono-Regular.woff2");
+     font-weight: normal;
+   }
+
+   @font-face {
+     font-family: "JetBrainsMono";
+     src: url("./jetbrains-mono/fonts/webfonts/JetBrainsMono-Bold.woff2");
+     font-weight: bold;
+   }
+   ```
+3. Include **`CSS` file** in the **`customCss`** array
+   ```js title="astro.config.mjs" ins={"font CSS": 6}
+   export default defineConfig({
+     integrations: [
+       starlight({
+         customCss: [
+           "./src/styles/custom.css",
+           "./src/fonts/font-face.css",
+         ],
+       }),
+     ],
+   });
+   ```
+
+4. Use fonts in [`custom.css`](#custom-css)
+
+   ```css title="src/styles/custom.css" {4-5} "AtkinsonHyperlegible" "JetBrainsMono"
+   /* fonts */
+
+   :root {
+     --sl-font: AtkinsonHyperlegible, serif;
+     --sl-font-system-mono: JetBrainsMono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+   }
+   ```
