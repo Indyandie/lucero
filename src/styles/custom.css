@@ -1,15 +1,14 @@
 /* fonts */
-
 :root {
-  --sl-font: "AtkinsonHyperlegible", serif;
+  --sl-font: AtkinsonHyperlegible, serif;
   --sl-font-system-mono: JetBrainsMono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* Dark mode colors. */
 :root {
-  --sl-color-accent-low: #272500;
-  --sl-color-accent: #726d00;
-  --sl-color-accent-high: #cdcc9c;
+  --sl-color-accent-low: #322000;
+  --sl-color-accent: #8d6000;
+  --sl-color-accent-high: #eac185;
   --sl-color-white: #ffffff;
   --sl-color-gray-1: #eeeeee;
   --sl-color-gray-2: #c8c8c8;
@@ -22,9 +21,9 @@
 
 /* Light mode colors. */
 :root[data-theme="light"] {
-  --sl-color-accent-low: #f1cec1;
-  --sl-color-accent: #b44100;
-  --sl-color-accent-high: #551f08;
+  --sl-color-accent-low: #bed9ff;
+  --sl-color-accent: #004fa9;
+  --sl-color-accent-high: #002f6a;
   --sl-color-white: #181818;
   --sl-color-gray-1: #272727;
   --sl-color-gray-2: #383838;
@@ -34,4 +33,16 @@
   --sl-color-gray-6: #eeeeee;
   --sl-color-gray-7: #f6f6f6;
   --sl-color-black: #ffffff;
+}
+
+code {
+  color: var(--sl-color-accent-high);
+}
+
+:root[data-theme="light"] code {
+  color: var(--sl-color-accent);
+}
+
+header .title-wrapper a {
+  color: var(--sl-color-white);
 }
