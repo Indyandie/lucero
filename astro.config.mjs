@@ -50,7 +50,10 @@ export default defineConfig({
           items: [
             {
               label: 'starlight-openapi',
-              items: ['starlight-openapi', ...openAPISidebarGroups],
+              items: [
+                'starlight-openapi',
+                ...openAPISidebarGroups,
+              ],
             },
             {
               label: 'Stoplight Elements',
