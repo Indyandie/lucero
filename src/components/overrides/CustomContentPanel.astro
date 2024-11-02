@@ -3,8 +3,9 @@ import type { Props } from '@astrojs/starlight/props'
 import Default from '@astrojs/starlight/components/ContentPanel.astro'
 const pageSlug = Astro.props.slug
 ---
+
 {
-  pageSlug === 'openapi/rapidoc/pokeapi' || pageSlug === 'openapi/stoplight-elements/pokeapi' ? (
+  pageSlug === ('openapi/rapidoc/pokeapi' || 'openapi/stoplight-elements/pokeapi') ? (
     <section>
       <slot />
     </section>
