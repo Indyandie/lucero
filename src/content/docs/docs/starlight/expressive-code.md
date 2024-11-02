@@ -6,7 +6,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
-lastUpdated: 2022-10-29
+lastUpdated: 2024-10-29
 ---
 
 A _quick_ overview of [**Expressive Code**](https://expressive-code.com/) features.

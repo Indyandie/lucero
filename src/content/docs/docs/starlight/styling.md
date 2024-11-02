@@ -6,7 +6,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
-lastUpdated: 2022-10-31
+lastUpdated: 2024-10-31
 ---
 
 ## Custom `CSS`

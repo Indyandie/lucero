@@ -6,7 +6,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
-lastUpdated: 2022-10-29
+lastUpdated: 2024-10-29
 ---
 
 <blockquote cite="https://daringfireball.net/projects/markdown/syntax#philosophy">
