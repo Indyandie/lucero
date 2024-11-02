@@ -1,6 +1,7 @@
 ---
 title: Expressive Code
 sidebar:
+  0rder: 22
   label: expressive code
 tableOfContents:
   minHeadingLevel: 2
