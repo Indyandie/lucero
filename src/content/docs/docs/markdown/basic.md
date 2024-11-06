@@ -6,7 +6,7 @@ sidebar:
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
-lastUpdated: 2024-10-29
+lastUpdated: 2024-11-06
 ---
 
 <blockquote cite="https://daringfireball.net/projects/markdown/syntax#philosophy">
@@ -195,16 +195,23 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 - [MDN reference](https://developer.mozilla.org/en-us/docs/web/html/element/img)
 
 ![Astro mascot with a hard hat](../../../../assets/images/houston.webp)
+![full moon face, twitter emoji](../../../../assets/images/twemoji/full-moon-face-1f31d.svg "tooltip: full moon face")
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
 
 ```markdown title="Markdown:" '![' '](' ')'
 ![Astro mascot with a hard hat](../../../../assets/images/houston.webp)
+![full moon face, twitter emoji](../../../../assets/images/twemoji/full-moon-face-1f31d.svg "tooltip: full moon face")
 ![replacement text if the image isn't available](/lucero/images/not-available.png)
 ```
 
 ```html title="HTML output:"
 <p>
-  <img src="/lucero/images/earth.gif" alt="gif of the earth spinning" />
+  <img src="../../../../assets/images/houston.webp" alt="Astro mascot with a hard hat" />
+  <img
+    src="../../../../assets/images/twemoji/full-moon-face-1f31d.svg"
+    title="tooltip: full moon face"
+    alt="full moon face, twitter emoji"
+  />
   <img
     src="/lucero/images/not-available.png"
     alt="replacement text if the image isn&#39;t available"
