@@ -21,13 +21,25 @@ Static assets, like favicons, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| command                              | action                                                                             |
-| :----------------------------------- | :--------------------------------------------------------------------------------- |
-| `deno install --allow-scripts`       | Installs dependencies                                                              |
-| `deno task dev`                      | Starts local dev server at `localhost:4321`                                        |
-| `deno task build`                    | Build your production site to `./dist/`                                            |
-| `deno task preview`                  | Preview your build locally, before deploying                                       |
-| `deno task astro ...`                | Run CLI commands like `astro add`, `astro check`                                   |
-| `deno task astro -- --help`          | Get help using the Astro CLI                                                       |
+| command                              | action                                                                                        |
+| :----------------------------------- | :-------------------------------------------------------------------------------------------- |
+| `deno install --allow-scripts`       | Installs dependencies                                                                         |
+| `deno task dev`                      | Starts local dev server at `localhost:4321`                                                   |
+| `deno task build`                    | Build your production site to `./dist/`                                                       |
+| `deno task preview`                  | Preview your build locally, before deploying                                                  |
+| `deno task astro ...`                | Run CLI commands like `astro add`, `astro check`                                              |
+| `deno task astro -- --help`          | Get help using the Astro CLI                                                                  |
 | `deno run -A npm:@astrojs/upgrade`   | _"Update"_ **Astro** dependencies, use the command below to bump or install the dependencies. |
-| `deno add npm:<package>[@<version>]` | Add/Upgrade package                                                                |
+| `deno add npm:<package>[@<version>]` | Add/Upgrade package                                                                           |
+
+## To Do
+
+- [ ] Add Tailwind CSS
+- [ ] Custom palette (dark/light)
+- [ ] Expressive Code Theme
+- [ ] Create customizable components
+  - [ ] Stoplight Elements
+  - [ ] RapiDoc
+- new projects
+  - [ ] Fork to create a Deno Starlight starter kit.
+  - [ ] Fork to create a version that overrides the starlight components with simpler semantic versions.
