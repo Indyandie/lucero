@@ -34,9 +34,10 @@ All commands are run from the root of the project, from a terminal:
 
 ## To Do
 
-- [ ] Add Tailwind CSS
+- [ ] Add Tailwind CSS (Wait till next version, so configuration can be in a `CSS` file?)
 - [ ] Custom palette (dark/light)
-- [ ] Expressive Code Theme
+- [ ] Create Expressive Code Theme
+- [ ] Add [**RSS feed**](https://docs.astro.build/en/guides/rss/)
 - [ ] Create customizable components
   - [ ] Stoplight Elements
   - [ ] RapiDoc
