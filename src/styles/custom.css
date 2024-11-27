@@ -39,6 +39,10 @@ code {
   color: var(--sl-color-accent-high);
 }
 
+pre[data-language="ansi"] code {
+  line-height: 100% !important;
+}
+
 :root[data-theme="light"] code {
   color: var(--sl-color-accent);
 }
