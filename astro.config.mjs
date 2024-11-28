@@ -1,12 +1,12 @@
 import { defineConfig, passthroughImageService } from 'astro/config'
 import starlight from '@astrojs/starlight'
 import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi'
+// import rehypeMermaid from 'rehype-mermaid'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://indyandie.github.io/',
   image: {
-    // service: squooshImageService(),
     service: passthroughImageService(),
   },
   base: '/lucero',
@@ -79,6 +79,11 @@ export default defineConfig({
       ],
     }),
   ],
+  // markdown: {
+  //   rehypePlugins: [
+  //     // rehypeMermaid,
+  //   ],
+  // },
   vite: {
     server: {
       watch: {

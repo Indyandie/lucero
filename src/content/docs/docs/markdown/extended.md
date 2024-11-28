@@ -5,7 +5,7 @@ tableOfContents:
   maxHeadingLevel: 2
 sidebar:
   label: extended
-lastUpdated: 2024-10-27
+lastUpdated: 2024-10-28
 next: false
 ---
 
@@ -205,6 +205,19 @@ This has a footnote. [^1]
 ---
 
 ## Unsupported
+
+### Mermaid JS
+
+- [Starlight Dicussion](https://github.com/withastro/starlight/discussions/1259#discussioncomment-8515492)
+
+:::warning
+I gave it the good'ol college try, but it's too complicated at them moment for my system. Why is playwright required to create diagrams?
+:::
+
+```mermaid
+flowchart TD
+    Start --> Stop
+```
 
 ```markdown
 <!-- Emojis -->
