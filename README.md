@@ -38,6 +38,10 @@ All commands are run from the root of the project, from a terminal:
 - [ ] Custom palette (dark/light)
 - [ ] Create Expressive Code Theme
 - [ ] Add [**RSS feed**](https://docs.astro.build/en/guides/rss/)
+  - [x] docs collection
+  - [ ] add stylesheet [Pretty feed](https://github.com/genmon/aboutfeeds/blob/main/tools/pretty-feed-v3.xsl)
+  - [ ] blog collection
+  - [ ] announcements collection
 - [ ] Create customizable components
   - [ ] Stoplight Elements
   - [ ] RapiDoc
