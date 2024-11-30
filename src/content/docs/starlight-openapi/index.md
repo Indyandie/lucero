@@ -1,8 +1,11 @@
 ---
-title: overview
+title: Overview
+description: Using Starlight OpenAPI Plugin.
+lastUpdated: 2024-10-28
 sidebar:
   order: 0
-lastUpdated: 2024-10-28
+rss: true
+pubDate: 2024-10-28
 ---
 
 The [Starlight OpenAPI](https://starlight-openapi.vercel.app/) plugin generates documentation using OpenAPI specifications.

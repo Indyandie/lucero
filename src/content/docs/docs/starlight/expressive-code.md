@@ -1,12 +1,14 @@
 ---
 title: Expressive Code
+lastUpdated: 2024-11-27
 sidebar:
   0rder: 22
   label: expressive code
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
-lastUpdated: 2024-11-27
+rss: true
+pubDate: 2024-11-27
 ---
 
 A _quick_ overview of [**Expressive Code**](https://expressive-code.com/) features.

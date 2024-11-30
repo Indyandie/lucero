@@ -1,12 +1,15 @@
 ---
 title: Basic Syntax
+description: Basic markdown syntax.
+pubDate: 2024-11-06
+lastUpdated: 2024-11-06
 sidebar:
   order: 10
   label: basic
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
-lastUpdated: 2024-11-06
+rss: true
 ---
 
 <blockquote cite="https://daringfireball.net/projects/markdown/syntax#philosophy">

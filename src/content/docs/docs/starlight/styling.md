@@ -1,12 +1,15 @@
 ---
 title: Styling
+description: Styling Starlight pages.
+lastUpdated: 2024-10-31
 sidebar:
   order: 20
   label: styling
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
-lastUpdated: 2024-10-31
+rss: true
+pubDate: 2024-10-31
 ---
 
 ## Custom `CSS`
