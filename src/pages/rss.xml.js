@@ -8,33 +8,41 @@ import sanitizeHtml from 'sanitize-html'
 
 // export function GET(context) {
 export async function GET(context) {
-  const blog = await getCollection('docs')
+  const docs = await getCollection('docs')
+  const pages = docs.filter((page) => page.data.rss === true).sort((a, b) => b.data.pubDate - a.data.pubDate)
 
   return rss({
+    // ex. use your stylesheet from "public/rss/styles.xsl"
+    stylesheet: '/lucero/rss/styles.xsl',
+
     // `<title>` field in output xml
     title: 'Lucero',
+
     // `<description>` field in output xml
     description: 'Take your documentation to the moon and back in the blink of an eye.',
     // Pull in your project "site" from the endpoint context
     // https://docs.astro.build/en/reference/api-reference/#contextsite
-    site: context.site,
+    site: `${context.site}/lucero`,
+
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
-    items: blog.map((post) => ({
-      title: post.data.title,
-      pubDate: post.data.pubDate,
-      description: post.data.description,
-      // Compute RSS link from post `slug`
-      // This example assumes all posts are rendered as `/blog/[slug]` routes
-      link: `/lucero/${post.slug}/`,
-      // content: sanitizeHtml(post.compiledContent()),
+    items: pages.map((page) => ({
+      title: page.data.title,
+      pubDate: page.data.pubDate,
+      description: page.data.description,
+
+      // Compute RSS link from page `slug`
+      link: `/lucero/${page.slug}/`,
+
+      // content: sanitizeHtml(page.compiledContent()),
       content: sanitizeHtml(
-        parser.render(post.body),
+        parser.render(page.body),
         {
           allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
         },
       ).replace(/[\x1B]/g, '&esc;'),
     })),
+
     // (optional) inject custom xml
     customData: `<language>en-us</language>`,
   })
