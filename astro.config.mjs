@@ -21,7 +21,7 @@ export default defineConfig({
       },
       social: {
         github: 'https://github.com/indyandie/lucero',
-        rss: 'https://indyandie.github.io/lucero/rss',
+        rss: 'https://indyandie.github.io/lucero/rss.xml',
       },
       components: {
         ContentPanel: './src/components/overrides/CustomContentPanel.astro',
