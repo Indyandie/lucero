@@ -32,7 +32,7 @@ export async function GET(context) {
     // See "Generating items" section for examples using content collections and glob imports
     items: items.map((page) => ({
       title: page.data.title,
-      puitems: page.data.pubDate,
+      pubDate: page.data.pubDate,
       description: page.data.description,
 
       // Compute RSS link from page `slug`
