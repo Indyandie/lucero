@@ -13,6 +13,17 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Lucero',
+      head: [
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'alternate',
+            type: 'application/rss+xml',
+            title: 'Lucero',
+            href: 'https://indyandie.github.io/lucero/rss.xml',
+          },
+        },
+      ],
       logo: {
         dark: './src/assets/images/twemoji/full-moon.svg',
         light: './src/assets/images/twemoji/new-moon.svg',
