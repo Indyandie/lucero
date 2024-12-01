@@ -1,5 +1,6 @@
 ---
 title: Expressive Code
+description: Easy to understand and visually stunning codeblocks.
 lastUpdated: 2024-11-27
 sidebar:
   order: 29
