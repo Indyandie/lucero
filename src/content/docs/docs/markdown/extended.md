@@ -1,15 +1,16 @@
 ---
 title: Extended Syntax
 description: Extended markdown syntax.
-pubDate: 2024-10-28
-lastUpdated: 2024-10-28
+lastUpdated: 2024-11-28
+sidebar:
+  label: extended
+  order: 19
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
-sidebar:
-  label: extended
 next: false
 rss: true
+pubDate: 2024-10-25
 ---
 
 ## Deleted Text `<del>`

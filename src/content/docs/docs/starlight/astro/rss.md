@@ -3,13 +3,13 @@ title: RSS
 description: Generate an RSS feed with Astro.
 lastUpdated: 2024-12-01
 sidebar:
-  order: 301
   label: rss
+  order: 301
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
 rss: true
-pubDate: 2024-12-30
+pubDate: 2024-11-30
 ---
 
 - [Astro RSS Guide](https://docs.astro.build/guides/rss/)

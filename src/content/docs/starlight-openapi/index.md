@@ -3,6 +3,7 @@ title: Overview
 description: Using Starlight OpenAPI Plugin.
 lastUpdated: 2024-10-28
 sidebar:
+  label: overview
   order: 0
 rss: true
 pubDate: 2024-10-28

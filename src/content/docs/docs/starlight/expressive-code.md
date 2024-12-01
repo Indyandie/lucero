@@ -3,13 +3,13 @@ title: Expressive Code
 description: Easy to understand and visually stunning codeblocks.
 lastUpdated: 2024-11-27
 sidebar:
-  order: 29
   label: expressive code
+  order: 29
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
 rss: true
-pubDate: 2024-11-27
+pubDate: 2024-10-27
 ---
 
 A _quick_ overview of [**Expressive Code**](https://expressive-code.com/) features.

@@ -1,15 +1,15 @@
 ---
 title: Components
 description: Working with Starlight components.
-lastUpdated: 2024-11-01
+lastUpdated: 2024-11-02
 sidebar:
-  order: 23
   label: components
+  order: 23
 tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
 rss: true
-pubDate: 2024-11-01
+pubDate: 2024-11-02
 ---
 
 - [Component Reference](https://starlight.astro.build/reference/overrides/)
