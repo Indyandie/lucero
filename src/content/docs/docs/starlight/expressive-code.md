@@ -2,7 +2,7 @@
 title: Expressive Code
 lastUpdated: 2024-11-27
 sidebar:
-  0rder: 22
+  order: 29
   label: expressive code
 tableOfContents:
   minHeadingLevel: 2

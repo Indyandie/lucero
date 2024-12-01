@@ -3,7 +3,7 @@ title: Styling
 description: Styling Starlight pages.
 lastUpdated: 2024-10-31
 sidebar:
-  order: 20
+  order: 21
   label: styling
 tableOfContents:
   minHeadingLevel: 2
