@@ -18,7 +18,14 @@ hero:
     - text: View on GitHub
       link: https://github.com/indyandie/lucero
       icon: github
-      variant: minimal
+      variant: secondary
       attrs:
         rel: me
+        target: _blank
+    - text: RSS Feed
+      link: /lucero/rss.xml
+      icon: rss
+      variant: minimal
+      attrs:
+        target: _blank
 ---

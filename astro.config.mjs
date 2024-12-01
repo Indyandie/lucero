@@ -59,6 +59,7 @@ export default defineConfig({
         },
         {
           label: 'OpenAPI',
+          collapsed: true,
           items: [
             {
               label: 'starlight-openapi',
@@ -76,6 +77,11 @@ export default defineConfig({
               autogenerate: { directory: 'openapi/rapidoc' },
             },
           ],
+        },
+        {
+          label: 'RSS Feed',
+          link: '/rss.xml',
+          attrs: { target: '_blank' },
         },
       ],
       expressiveCode: {
