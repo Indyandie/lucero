@@ -1,15 +1,19 @@
 import rss from '@astrojs/rss'
 import { getCollection } from 'astro:content'
+
 // https://github.com/markdown-it/markdown-it
 import MarkdownIt from 'markdown-it'
-const parser = new MarkdownIt()
+const markdownParser = new MarkdownIt()
+
 // https://github.com/apostrophecms/sanitize-html
 import sanitizeHtml from 'sanitize-html'
 
 // export function GET(context) {
 export async function GET(context) {
   const docs = await getCollection('docs')
-  const pages = docs.filter((page) => page.data.rss === true).sort((a, b) => b.data.pubDate - a.data.pubDate)
+  const items = docs
+    .filter((page) => page.data.rss === true)
+    .sort((a, b) => b.data.pubDate - a.data.pubDate)
 
   return rss({
     // ex. use your stylesheet from "public/rss/styles.xsl"
@@ -26,9 +30,9 @@ export async function GET(context) {
 
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
-    items: pages.map((page) => ({
+    items: items.map((page) => ({
       title: page.data.title,
-      pubDate: page.data.pubDate,
+      puitems: page.data.pubDate,
       description: page.data.description,
 
       // Compute RSS link from page `slug`
@@ -36,11 +40,12 @@ export async function GET(context) {
 
       // content: sanitizeHtml(page.compiledContent()),
       content: sanitizeHtml(
-        parser.render(page.body),
+        markdownParser.render(page.body),
         {
           allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
         },
-      ).replace(/[\x1B]/g, '&esc;'),
+      )
+        .replace(/\x1b/g, '&esc;'),
     })),
 
     // (optional) inject custom xml
