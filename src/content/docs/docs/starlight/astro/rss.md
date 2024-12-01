@@ -9,7 +9,7 @@ tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 2
 rss: true
-pubDate: 2024-12-01
+pubDate: 2024-12-30
 ---
 
 - [Astro RSS Guide](https://docs.astro.build/guides/rss/)
@@ -243,3 +243,32 @@ pubDate: 2024-12-01
      });
    }
    ```
+
+## Enable [RSS Auto-discovery](https://www.rssboard.org/rss-autodiscovery)
+
+- [Astro Docs](https://docs.astro.build/en/guides/rss/#enabling-rss-feed-auto-discovery)
+
+Update the `defineConfig.integrations.starlight.head` in the project `astro.config.mjs` file with the following
+
+```javascript title="astro.config.mjs" {6-16}
+export default defineConfig({
+  // ...
+  integrations: [
+    starlight({
+      title: 'Lucero',
+      head: [
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'alternate',
+            type: 'application/rss+xml',
+            title: 'Lucero',
+            href: 'https://indyandie.github.io/lucero/rss.xml',
+          },
+        },
+      ],
+      // ...
+    }),
+  ],
+})
+```
