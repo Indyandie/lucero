@@ -34,6 +34,11 @@ All commands are run from the root of the project, from a terminal:
 
 ## To Do
 
+- Markdown
+  - [ ] Reference links
+  - Mermaid JS
+    - [ ] NixOS playwright workaround
+    - [ ] update `workflow`
 - [ ] Add Tailwind CSS (Wait till next version, so configuration can be in a `CSS` file?)
 - [ ] Custom palette (dark/light)
 - [ ] Create Expressive Code Theme
