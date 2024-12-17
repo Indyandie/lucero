@@ -11,10 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^5.3.0",
-    "@astrojs/rss": "^4.0.9",
-    "@astrojs/starlight": "^0.29.2",
-    "astro": "^4.16.16",
+    "@astrojs/markdown-remark": "6.0.1",
+    "@astrojs/rss": "4.0.10",
+    "@astrojs/starlight": "0.30.2",
+    "astro": "5.0.9",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.13.1",
     "starlight-openapi": "^0.8.1"
