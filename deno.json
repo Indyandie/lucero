@@ -10,7 +10,6 @@
     "path": "node:path",
     "url": "node:url",
     "worker_threads": "node:worker_threads",
-    "module": "node:module",
-    "@readme/openapi-parser": "npm:@readme/openapi-parser@2.5.0"
+    "module": "node:module"
   }
 }

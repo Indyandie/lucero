@@ -8,7 +8,7 @@
     "npm:astro@5.0.9": "5.0.9_vite@6.0.3_zod@3.24.1",
     "npm:markdown-it@^14.1.0": "14.1.0",
     "npm:sanitize-html@^2.13.1": "2.13.1",
-    "npm:starlight-openapi@~0.8.1": "0.8.3_@astrojs+markdown-remark@6.0.1_@astrojs+starlight@0.30.2__astro@5.0.9___vite@6.0.3___zod@3.24.1_astro@5.0.9__vite@6.0.3__zod@3.24.1"
+    "npm:starlight-openapi@0.9": "0.9.0_@astrojs+markdown-remark@6.0.1_@astrojs+starlight@0.30.2__astro@5.0.9___vite@6.0.3___zod@3.24.1_astro@5.0.9__vite@6.0.3__zod@3.24.1"
   },
   "npm": {
     "@apidevtools/openapi-schemas@2.1.0": {
@@ -2762,13 +2762,12 @@
     "sprintf-js@1.0.3": {
       "integrity": "sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g=="
     },
-    "starlight-openapi@0.8.3_@astrojs+markdown-remark@6.0.1_@astrojs+starlight@0.30.2__astro@5.0.9___vite@6.0.3___zod@3.24.1_astro@5.0.9__vite@6.0.3__zod@3.24.1": {
-      "integrity": "sha512-rTfA+8DFKOo3zEqijOtQ2vzlL7P2GpbEYaq6ZMoQLlHQEwsnX1TNWOLyevamBTUI3j/vAAYGRave5uSRHhLBow==",
+    "starlight-openapi@0.9.0_@astrojs+markdown-remark@6.0.1_@astrojs+starlight@0.30.2__astro@5.0.9___vite@6.0.3___zod@3.24.1_astro@5.0.9__vite@6.0.3__zod@3.24.1": {
+      "integrity": "sha512-YKsYNqYhWu3VF91z4XB1os4ZXwTsgz1LCZggeK/G6RguV4hcaFH18wHYGtO9icqPR+ZbJyrLAdlAjF3CvGBAWA==",
       "dependencies": [
         "@astrojs/markdown-remark",
         "@astrojs/starlight",
         "@readme/openapi-parser",
-        "astro",
         "github-slugger"
       ]
     },
@@ -3052,9 +3051,6 @@
     }
   },
   "workspace": {
-    "dependencies": [
-      "npm:@readme/openapi-parser@2.5.0"
-    ],
     "packageJson": {
       "dependencies": [
         "npm:@astrojs/markdown-remark@6.0.1",
@@ -3063,7 +3059,7 @@
         "npm:astro@5.0.9",
         "npm:markdown-it@^14.1.0",
         "npm:sanitize-html@^2.13.1",
-        "npm:starlight-openapi@~0.8.1"
+        "npm:starlight-openapi@0.9"
       ]
     }
   }
