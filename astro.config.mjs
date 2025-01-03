@@ -5,11 +5,11 @@ import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://indyandie.github.io/',
+  site: 'https://lucero.indieandy.cc',
   image: {
     service: passthroughImageService(),
   },
-  base: '/lucero',
+  // base: '/lucero',
   integrations: [
     starlight({
       title: 'Lucero',
