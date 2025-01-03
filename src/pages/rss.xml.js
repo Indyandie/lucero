@@ -17,7 +17,7 @@ export async function GET(context) {
 
   return rss({
     // ex. use your stylesheet from "public/rss/styles.xsl"
-    stylesheet: '/lucero/rss/styles.xsl',
+    stylesheet: '/rss/styles.xsl',
 
     // `<title>` field in output xml
     title: 'Lucero',
@@ -26,7 +26,7 @@ export async function GET(context) {
     description: 'Take your documentation to the moon and back in the blink of an eye.',
     // Pull in your project "site" from the endpoint context
     // https://docs.astro.build/en/reference/api-reference/#contextsite
-    site: `${context.site}/lucero`,
+    site: `${context.site}/`,
 
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
@@ -36,7 +36,7 @@ export async function GET(context) {
       description: page.data.description,
 
       // Compute RSS link from page `slug`
-      link: `/lucero/${page.slug}/`,
+      link: `/${page.id}/`,
 
       // content: sanitizeHtml(page.compiledContent()),
       content: sanitizeHtml(
