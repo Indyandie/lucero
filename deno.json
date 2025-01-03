@@ -1,5 +1,5 @@
 {
-  "nodeModulesDir": "manual",
+  "nodeModulesDir": "auto",
   "imports": {
     "fs": "node:fs",
     "util": "node:util",
@@ -10,6 +10,7 @@
     "path": "node:path",
     "url": "node:url",
     "worker_threads": "node:worker_threads",
-    "module": "node:module"
+    "module": "node:module",
+    "buffer": "node:buffer"
   }
 }
