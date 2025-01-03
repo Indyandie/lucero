@@ -34,7 +34,7 @@ https://github.com/genmon/aboutfeeds/blob/main/tools/pretty-feed-v3.xsl
           <hr/>
           <section>
             <h2>
-              <img style="vertical-align: text-bottom; width: 1.2em; height: 1.2em" src="/lucero/rss/rss-icon.svg" class="pr-1" />
+              <img style="vertical-align: text-bottom; width: 1.2em; height: 1.2em" src="/rss/rss-icon.svg" class="pr-1" />
               RSS Feed
             </h2>
             <hr/>

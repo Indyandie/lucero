@@ -12,18 +12,18 @@ hero:
   tagline: Take your documentation to the moon and back in the blink of an eye.
   actions:
     - text: Get started
-      link: /lucero/docs/usage/
+      link: /docs/usage/
       icon: right-arrow
       variant: primary
     - text: View on GitHub
-      link: https://github.com/indyandie/lucero
+      link: https://lucero.indieandy.cc/
       icon: github
       variant: secondary
       attrs:
         rel: me
         target: _blank
     - text: RSS Feed
-      link: /lucero/rss.xml
+      link: /rss.xml
       icon: rss
       variant: minimal
       attrs:

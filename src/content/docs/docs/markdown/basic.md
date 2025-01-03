@@ -199,12 +199,12 @@ it should not be used to apply **bold styling**, use **`css`** for that.
 
 ![Astro mascot with a hard hat](../../../../assets/images/houston.webp)
 ![full moon face, twitter emoji](../../../../assets/images/twemoji/full-moon-face-1f31d.svg "tooltip: full moon face")
-![replacement text if the image isn't available](/lucero/images/not-available.png)
+![replacement text if the image isn't available](/no-directory/images/not-available.png)
 
 ```markdown title="Markdown:" '![' '](' ')'
 ![Astro mascot with a hard hat](../../../../assets/images/houston.webp)
 ![full moon face, twitter emoji](../../../../assets/images/twemoji/full-moon-face-1f31d.svg "tooltip: full moon face")
-![replacement text if the image isn't available](/lucero/images/not-available.png)
+![replacement text if the image isn't available](/no-directory/images/not-available.png)
 ```
 
 ```html title="HTML output:"
@@ -216,7 +216,7 @@ it should not be used to apply **bold styling**, use **`css`** for that.
     alt="full moon face, twitter emoji"
   />
   <img
-    src="/lucero/images/not-available.png"
+    src="/no-directory/images/not-available.png"
     alt="replacement text if the image isn&#39;t available"
   />
 </p>
