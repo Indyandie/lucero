@@ -4,8 +4,11 @@ import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi'
 // import rehypeMermaid from 'rehype-mermaid'
 
 // https://astro.build/config
+
+const siteURl = 'https://lucero.indieandy.cc/'
+
 export default defineConfig({
-  site: 'https://lucero.indieandy.cc',
+  site: siteURl,
   image: {
     service: passthroughImageService(),
   },
@@ -20,7 +23,7 @@ export default defineConfig({
             rel: 'alternate',
             type: 'application/rss+xml',
             title: 'Lucero',
-            href: 'https://indyandie.github.io/lucero/rss.xml',
+            href: `${siteURl}rss.xml`,
           },
         },
       ],
@@ -32,7 +35,7 @@ export default defineConfig({
       },
       social: {
         github: 'https://github.com/indyandie/lucero',
-        rss: 'https://indyandie.github.io/lucero/rss.xml',
+        rss: `${siteURl}rss.xml`,
       },
       components: {
         ContentPanel: './src/components/overrides/CustomContentPanel.astro',
