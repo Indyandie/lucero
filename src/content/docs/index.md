@@ -16,7 +16,7 @@ hero:
       icon: right-arrow
       variant: primary
     - text: View on GitHub
-      link: https://lucero.indieandy.cc/
+      link: https://github.com/indyandie/lucero
       icon: github
       variant: secondary
       attrs:
