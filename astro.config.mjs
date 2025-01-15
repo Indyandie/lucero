@@ -42,18 +42,18 @@ export default defineConfig({
       },
       plugins: [
         // Generate the OpenAPI documentation pages.
-        // starlightOpenAPI([
-        //   {
-        //     base: 'api/openai',
-        //     label: 'openAI',
-        //     schema: './src/assets/openapi-documents/openai.yaml',
-        //   },
-        //   {
-        //     base: 'api/pokeapi',
-        //     label: 'PokeAPI',
-        //     schema: './src/assets/openapi-documents/pokeapi.yaml',
-        //   },
-        // ]),
+        starlightOpenAPI([
+          {
+            base: 'api/openai',
+            label: 'openAI',
+            schema: './src/assets/openapi-documents/openai.yaml',
+          },
+          {
+            base: 'api/pokeapi',
+            label: 'PokeAPI',
+            schema: './src/assets/openapi-documents/pokeapi.yaml',
+          },
+        ]),
       ],
       sidebar: [
         {
@@ -64,13 +64,13 @@ export default defineConfig({
           label: 'OpenAPI',
           collapsed: true,
           items: [
-            // {
-            //   label: 'starlight-openapi',
-            //   items: [
-            //     'starlight-openapi',
-            //     ...openAPISidebarGroups,
-            //   ],
-            // },
+            {
+              label: 'starlight-openapi',
+              items: [
+                'starlight-openapi',
+                ...openAPISidebarGroups,
+              ],
+            },
             {
               label: 'Stoplight Elements',
               autogenerate: { directory: 'openapi/stoplight-elements' },
