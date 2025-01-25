@@ -1,4 +1,4 @@
-name: Deploy Astro to GitHub Pages with Deno
+name: Deno - Deploy to GitHub Pages
 
 on:
   push:
