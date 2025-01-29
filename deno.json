@@ -1,5 +1,8 @@
 {
   "nodeModulesDir": "auto",
+  "unstable": [
+    "node-globals"
+  ],
   "imports": {
     "fs": "node:fs",
     "util": "node:util",
