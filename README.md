@@ -52,4 +52,5 @@ All commands are run from the root of the project, from a terminal:
   - [ ] RapiDoc
 - new projects
   - [ ] Fork to create a Deno Starlight starter kit.
-  - [ ] Fork to create a version that overrides the starlight components with simpler semantic versions.
+  - [x] Fork to create a version that overrides the starlight components with simpler semantic versions.
+    - [dwarflight](https://github.com/Indyandie/dwarflight)
