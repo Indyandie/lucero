@@ -26,17 +26,17 @@ This example overrides on specific pages using the _built-in_ `ContentPanel` com
 
    ```astro title="src/components/overrides/CustomContentPanel.astro"
    ---
-   import type { Props } from '@astrojs/starlight/props'
    import Default from '@astrojs/starlight/components/ContentPanel.astro'
-   const pageSlug = Astro.props.slug
+   const pageSlug = Astro.locals.starlightRoute.slug
    ---
+
    {
      pageSlug === ('openapi/rapidoc/pokeapi' || 'openapi/stoplight-elements/pokeapi') ? (
        <section>
          <slot />
        </section>
      ) : (
-       <Default {...Astro.props}>
+       <Default>
          <slot />
        </Default>
      )
