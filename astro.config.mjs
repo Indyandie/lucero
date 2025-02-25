@@ -12,7 +12,6 @@ export default defineConfig({
   image: {
     service: passthroughImageService(),
   },
-  // base: '/lucero',
   integrations: [
     starlight({
       title: 'Lucero',
