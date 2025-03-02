@@ -25,6 +25,52 @@ export default defineConfig({
             href: `${siteURl}rss.xml`,
           },
         },
+        {
+          // favicon
+          tag: 'link',
+          attrs: { rel: 'icon', type: 'image/svg+xml', href: '/favicon.ico' },
+        },
+        // IOS/Android
+        {
+          tag: 'link',
+          attrs: { rel: 'apple-touch-icon', sizes: '192x192', href: '/apple-touch-icon-192x192.png' },
+        },
+        {
+          tag: 'link',
+          attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon-180x180.png' },
+        },
+        {
+          tag: 'link',
+          attrs: { rel: 'apple-touch-icon', sizes: '152x152', href: '/apple-touch-icon-152x152.png' },
+        },
+        {
+          tag: 'link',
+          attrs: { rel: 'apple-touch-icon', sizes: '120x120', href: '/apple-touch-icon-120x120.png' },
+        },
+        {
+          tag: 'link',
+          attrs: { rel: 'apple-touch-icon', sizes: '76x76', href: '/apple-touch-icon-76x76.png' },
+        },
+        {
+          tag: 'link',
+          attrs: { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-touch-icon-57x57.png' },
+        },
+        {
+          tag: 'link',
+          attrs: { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+        },
+
+        {
+          // Safari 9+
+          tag: 'link',
+          attrs: { rel: 'mask-icon', href: '/mask-icon.svg', color: '#012C3C' },
+        },
+
+        {
+          // Chrome Android
+          tag: 'link',
+          attrs: { rel: 'icon', sizes: '196x196', href: '/shortcut-icon.png' },
+        },
       ],
       logo: {
         dark: './src/assets/images/twemoji/full-moon.svg',
