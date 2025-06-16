@@ -210,65 +210,6 @@ This has a footnote. [^1]
 
 ## Unsupported
 
-### Mermaid JS
-
-- [Mermaid JS](https://mermaid.js.org/)
-- [Starlight Discussion](https://github.com/withastro/starlight/discussions/1259#discussioncomment-8515492)
-
-:::note
-I gave it the good'ol college try, but it's too complicated at the moment for my system (NixOS). Why is _playwright_ required to create diagrams and images?
-:::
-
-```mermaid
-%% comment (someday)
-flowchart TD
-    Start --> Stop
-```
-
-````markdown
-```mermaid
-%% comment (someday)
-flowchart TD
-    Start --> Stop
-```
-````
-
-#### Pre-generated Images
-
-- [mermaid-cli](https://github.com/mermaid-js/mermaid-cli)
-
-##### Default
-
-```shell title="terminal"
-mmdc -i basic.mmdc -o basic.png
-```
-
-![](../../../../assets/images/mermaid/misc/basic.png)
-
-```shell title="terminal"
-mmdc -i basic.mmdc -o basic.svg
-```
-
-![](../../../../assets/images/mermaid/misc/basic.svg)
-
-##### Dark Mode (`-t dark`) & Transparent Background (`-b transparent`)
-
-```shell title="terminal"
-mmdc -t dark -b transparent -i basic.mmdc -o basic.png
-```
-
-![](../../../../assets/images/mermaid/misc/basic-dark.png)
-
-```shell title="terminal"
-mmdc -t dark -b transparent -i basic.mmdc -o basic.svg
-```
-
-![](../../../../assets/images/mermaid/misc/basic-dark.svg)
-
----
-
-### Others
-
 ```markdown
 <!-- Emojis -->
 
