@@ -2,6 +2,7 @@ import { defineConfig, passthroughImageService } from 'astro/config'
 import starlight from '@astrojs/starlight'
 import starlightOpenAPI, { openAPISidebarGroups } from 'starlight-openapi'
 // import rehypeMermaid from 'rehype-mermaid'
+import mermaid from 'astro-mermaid'
 
 // https://astro.build/config
 
@@ -13,6 +14,9 @@ export default defineConfig({
     service: passthroughImageService(),
   },
   integrations: [
+    mermaid({
+      theme: 'forest',
+    }),
     starlight({
       title: 'Lucero',
       head: [
