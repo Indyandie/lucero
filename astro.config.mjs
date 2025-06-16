@@ -78,10 +78,10 @@ export default defineConfig({
         // src: './src/assets/images/twemoji/first-quarter-moon.svg',
         replacesTitle: false,
       },
-      social: {
-        github: 'https://github.com/indyandie/lucero',
-        rss: `${siteURl}rss.xml`,
-      },
+      social: [
+        { icon: 'github', label: 'github', href: 'https://github.com/indyandie/lucero' },
+        { icon: 'rss', label: 'rss', href: `${siteURl}rss.xml` },
+      ],
       components: {
         ContentPanel: './src/components/overrides/CustomContentPanel.astro',
       },
